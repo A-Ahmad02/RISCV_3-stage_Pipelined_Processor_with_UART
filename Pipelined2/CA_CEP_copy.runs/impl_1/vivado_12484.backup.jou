@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Wed May  8 14:45:05 2024
+# Process ID: 12484
+# Current directory: C:/DriveA/Workspaces/Vivado/CA_Lab/CEP - Copy/CA_CEP_copy.runs/impl_1
+# Command line: vivado.exe -log Pipelined_Processor.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source Pipelined_Processor.tcl -notrace
+# Log file: C:/DriveA/Workspaces/Vivado/CA_Lab/CEP - Copy/CA_CEP_copy.runs/impl_1/Pipelined_Processor.vdi
+# Journal file: C:/DriveA/Workspaces/Vivado/CA_Lab/CEP - Copy/CA_CEP_copy.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source Pipelined_Processor.tcl -notrace

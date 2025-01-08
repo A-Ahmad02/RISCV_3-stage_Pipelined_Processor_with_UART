@@ -1,0 +1,55 @@
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/ProgramFiles/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 4470127e34ce404bb96b929cb9654ad5 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot Processor_tb_behav xil_defaultlib.Processor_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 34 differs from formal bit length 32 for port 'in1' [C:/DriveA/Workspaces/Vivado/CA_Lab/CEP - Copy/CSR_Reg_file.sv:128]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package xil_defaultlib.$unit_ALU_sv
+Compiling module xil_defaultlib.Full_Forwarding_Unit
+Compiling module xil_defaultlib.ControlPath
+Compiling module xil_defaultlib.Counter
+Compiling module xil_defaultlib.MUX2x1
+Compiling module xil_defaultlib.FF_32bit
+Compiling module xil_defaultlib.Instr_Mem
+Compiling module xil_defaultlib.FF_1bit
+Compiling module xil_defaultlib.Fetch
+Compiling module xil_defaultlib.ImmGen
+Compiling module xil_defaultlib.Reg_file
+Compiling module xil_defaultlib.Decode
+Compiling module xil_defaultlib.MUX3x1
+Compiling module xil_defaultlib.BranchCond
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.Execute
+Compiling module xil_defaultlib.Decode_Execute
+Compiling module xil_defaultlib.Load_Store_Unit
+Compiling module xil_defaultlib.Data_Mem
+Compiling module xil_defaultlib.DownClocking_BaudRate
+Compiling module xil_defaultlib.MUX2x1_1bit
+Compiling module xil_defaultlib.D_FlipFlop
+Compiling module xil_defaultlib.ShiftReg_10bit_Tx_default
+Compiling module xil_defaultlib.ShiftReg_10bit_Rx_default
+Compiling module xil_defaultlib.uart_interrupt
+Compiling module xil_defaultlib.UART_Datapath
+Compiling module xil_defaultlib.StateMachine
+Compiling module xil_defaultlib.Comparator_3bit
+Compiling module xil_defaultlib.MUX2x1_4bit
+Compiling module xil_defaultlib.Reloadable_DownCounter
+Compiling module xil_defaultlib.Comparator_4bit
+Compiling module xil_defaultlib.DownCounter_1bit
+Compiling module xil_defaultlib.Edge_to_Pulse
+Compiling module xil_defaultlib.UART_Controller
+Compiling module xil_defaultlib.UART
+Compiling module xil_defaultlib.CSR_Reg_file
+Compiling module xil_defaultlib.Memory
+Compiling module xil_defaultlib.MUX4x1
+Compiling module xil_defaultlib.Writeback
+Compiling module xil_defaultlib.Memory_Writeback
+Compiling module xil_defaultlib.DataPath
+Compiling module xil_defaultlib.Pipelined_Processor
+Compiling module xil_defaultlib.Processor_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot Processor_tb_behav
