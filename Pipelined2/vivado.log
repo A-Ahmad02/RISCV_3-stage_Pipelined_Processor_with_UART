@@ -1,0 +1,701 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Wed May  8 13:31:33 2024
+# Process ID: 19524
+# Current directory: C:/DriveA/Workspaces/Vivado/CA_Lab/CEP - Copy
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent7516 C:\DriveA\Workspaces\Vivado\CA_Lab\CEP - Copy\CA_CEP_copy.xpr
+# Log file: C:/DriveA/Workspaces/Vivado/CA_Lab/CEP - Copy/vivado.log
+# Journal file: C:/DriveA/Workspaces/Vivado/CA_Lab/CEP - Copy\vivado.jou
+#-----------------------------------------------------------sstart_guiopen_project {C:/DriveA/Workspaces/Vivado/CA_Lab/CEP - Copy/CA_CEP_copy.xpr}
+INFO: [Project 1-313] Project file moved from 'C:/DriveA/Workspaces/Vivado/CA_Lab/CEP' since last save.
+Scanning sourcexit
+INFO: [Common 17-206] Exiting Vivado at Wed May  8 13:33:33 2024...
+e for 'synth_1' not found
+INFO: [filemgmt 56-1] IPUserFilesDir: Directory not found as 'C:/DriveA/Workspaces/Vivado/CA_Lab/CEP - Copy/CA_CEP_copy.ip_user_files'; using path 'C:/DriveA/Workspaces/Vivado/CA_Lab/CEP/CA_CEP.ip_user_files' instead.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/ProgramFiles/Xilinx/Vivado/2019.1/data/ip'.
+Iopen_project: Time (s): cpu = 00:00:22 ; elapsed = 00:00:32 . Memory (MB): peak = 741.270 ; gain = 161.051
+update_compile_order -fileset sources_1
+launch_runs synth_1 -jobs 2
+[Wed May  8 13:37:39 2024] Launched synth_1...
+Run output will be captured here: C:/DriveA/Workspaces/Vivado/CA_Lab/CEP - Copy/CA_CEP_copy.runs/synth_1/runme.log
+launch_runs: Time (s): cpu = 00:00:12 ; elapsed = 00:00:16 . Memory (MB): peak = 808.602 ; gain = 4.383
+launch_runs impl_1 -jobs 2
+[Wed May  8 14:36:03 2024] Launched impl_1...
+Run output will be captured here: C:/DriveA/Workspaces/Vivado/CA_Lab/CEP - Copy/CA_CEP_copy.runs/impl_1/runme.log
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7a100tcsg324-1
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Project 1-479] Netlist was created with Vivado 2019.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1162.418 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:38 ; elapsed = 00:00:42 . Memory (MB): peak = 1300.449 ; gain = 468.324
+open_run impl_1
+INFO: [Project 1-479] Netlist was created with Vivado 2019.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.077 . Memory (MB): peak = 1861.633 ; gain = 0.000
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.080 . Memory (MB): peak = 1861.633 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1862.016 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+WARNING: [Timing 38-313] There are no user specified timing constraints. Timing constraints are needed for proper timing analysis.
+current_design synth_1
+place_ports clk E3
+set_property package_pin "" [get_ports [list  rst]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list clk]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list rst]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list uart_s_in]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list uart_s_out]]
+set_property is_loc_fixed false [get_ports [list  clk]]
+place_ports rst J15
+set_property is_loc_fixed true [get_ports [list  clk]]
+set_property package_pin "" [get_ports [list  uart_s_in]]
+set_property package_pin "" [get_ports [list  uart_s_out]]
+set_property package_pin "" [get_ports [list  uart_s_in]]
+set_property IOSTANDARD LVCMOS18 [get_ports [list uart_s_in]]
+set_property package_pin "" [get_ports [list  uart_s_in]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list uart_s_in]]
+set_property package_pin "" [get_ports [list  uart_s_in]]
+place_ports uart_s_in F16
+place_ports uart_s_out D14
+file mkdir {C:/DriveA/Workspaces/Vivado/CA_Lab/CEP - Copy/CA_CEP_copy.srcs/constrs_1/new}
+close [ open {C:/DriveA/Workspaces/Vivado/CA_Lab/CEP - Copy/CA_CEP_copy.srcs/constrs_1/new/UART_CEP.xdc} w ]
+add_files -fileset constrs_1 {{C:/DriveA/Workspaces/Vivado/CA_Lab/CEP - Copy/CA_CEP_copy.srcs/constrs_1/new/UART_CEP.xdc}}
+set_property target_constrs_file {C:/DriveA/Workspaces/Vivado/CA_Lab/CEP - Copy/CA_CEP_copy.srcs/constrs_1/new/UART_CEP.xdc} [current_fileset -constrset]
+save_constraints -force
+reset_run impl_1
+launch_runs impl_1 -jobs 2
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 2063.988 ; gain = 0.000
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.063 . Memory (MB): peak = 2079.645 ; gain = 15.656
+[Wed May  8 14:42:47 2024] Launched impl_1...
+Run output will be captured here: C:/DriveA/Workspaces/Vivado/CA_Lab/CEP - Copy/CA_CEP_copy.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Wed May  8 14:44:52 2024] Launched impl_1...
+Run output will be captured here: C:/DriveA/Workspaces/Vivado/CA_Lab/CEP - Copy/CA_CEP_copy.runs/impl_1/runme.log
+open_hw
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Wed May  8 14:47:28 2024] Launched impl_1...
+Run output will be captured here: C:/DriveA/Workspaces/Vivado/CA_Lab/CEP - Copy/CA_CEP_copy.runs/impl_1/runme.log
+close_hw
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/DriveA/Workspaces/Vivado/CA_Lab/CEP - Copy/CA_CEP_copy.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'Processor_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/DriveA/Workspaces/Vivado/CA_Lab/CEP - Copy/CA_CEP_copy.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj Processor_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/DriveA/Workspaces/Vivado/CA_Lab/CEP - Copy/ALU.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/DriveA/Workspaces/Vivado/CA_Lab/CEP - Copy/BranchCond.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module BranchCond
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/DriveA/Workspaces/Vivado/CA_Lab/CEP - Copy/CSR_Reg_file.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CSR_Reg_file
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/DriveA/Workspaces/Vivado/CA_Lab/CEP - Copy/UART/Comparator_3bit.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Comparator_3bit
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/DriveA/Workspaces/Vivado/CA_Lab/CEP - Copy/UART/Comparator_4bit.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Comparator_4bit
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/DriveA/Workspaces/Vivado/CA_Lab/CEP - Copy/ControlPath.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ControlPath
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/DriveA/Workspaces/Vivado/CA_Lab/CEP - Copy/Counter.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Counter
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/DriveA/Workspaces/Vivado/CA_Lab/CEP - Copy/UART/D_FlipFlop.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module D_FlipFlop
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/DriveA/Workspaces/Vivado/CA_Lab/CEP - Copy/DataPath.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DataPath
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/DriveA/Workspaces/Vivado/CA_Lab/CEP - Copy/Data_Mem.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Data_Mem
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/DriveA/Workspaces/Vivado/CA_Lab/CEP - Copy/Decode.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Decode
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/DriveA/Workspaces/Vivado/CA_Lab/CEP - Copy/Decode_Execute.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Decode_Execute
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/DriveA/Workspaces/Vivado/CA_Lab/CEP - Copy/UART/DownClocking_BaudRate.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DownClocking_BaudRate
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/DriveA/Workspaces/Vivado/CA_Lab/CEP - Copy/UART/DownCounter_1bit.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DownCounter_1bit
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/DriveA/Workspaces/Vivado/CA_Lab/CEP - Copy/UART/Edge_to_Pulse.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Edge_to_Pulse
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/DriveA/Workspaces/Vivado/CA_Lab/CEP - Copy/Execute.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Execute
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/DriveA/Workspaces/Vivado/CA_Lab/CEP - Copy/FF_1bit.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FF_1bit
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/DriveA/Workspaces/Vivado/CA_Lab/CEP - Copy/FF_32bit.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FF_32bit
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/DriveA/Workspaces/Vivado/CA_Lab/CEP - Copy/Fetch.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Fetch
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/DriveA/Workspaces/Vivado/CA_Lab/CEP - Copy/Full_Forwarding_Unit.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Full_Forwarding_Unit
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/DriveA/Workspaces/Vivado/CA_Lab/CEP - Copy/ImmGen.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ImmGen
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/DriveA/Workspaces/Vivado/CA_Lab/CEP - Copy/Instr_Mem.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Instr_Mem
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/DriveA/Workspaces/Vivado/CA_Lab/CEP - Copy/Load_Store_Unit.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Load_Store_Unit
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/DriveA/Workspaces/Vivado/CA_Lab/CEP - Copy/MUX2x1.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MUX2x1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/DriveA/Workspaces/Vivado/CA_Lab/CEP - Copy/UART/MUX2x1_1bit.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MUX2x1_1bit
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/DriveA/Workspaces/Vivado/CA_Lab/CEP - Copy/UART/MUX2x1_4bit.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MUX2x1_4bit
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/DriveA/Workspaces/Vivado/CA_Lab/CEP - Copy/MUX3x1.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MUX3x1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/DriveA/Workspaces/Vivado/CA_Lab/CEP - Copy/MUX4x1.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MUX4x1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/DriveA/Workspaces/Vivado/CA_Lab/CEP - Copy/Memory.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Memory
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/DriveA/Workspaces/Vivado/CA_Lab/CEP - Copy/Memory_Writeback.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Memory_Writeback
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/DriveA/Workspaces/Vivado/CA_Lab/CEP - Copy/Pipelined_Processor.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Pipelined_Processor
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/DriveA/Workspaces/Vivado/CA_Lab/CEP - Copy/Reg_file.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Reg_file
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/DriveA/Workspaces/Vivado/CA_Lab/CEP - Copy/UART/Reloadable_DownCounter.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Reloadable_DownCounter
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/DriveA/Workspaces/Vivado/CA_Lab/CEP - Copy/UART/ShiftReg_10bit_Rx.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ShiftReg_10bit_Rx
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/DriveA/Workspaces/Vivado/CA_Lab/CEP - Copy/UART/ShiftReg_10bit_Tx.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ShiftReg_10bit_Tx
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/DriveA/Workspaces/Vivado/CA_Lab/CEP - Copy/UART/StateMachine.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module StateMachine
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/DriveA/Workspaces/Vivado/CA_Lab/CEP - Copy/UART/UART.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module UART
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/DriveA/Workspaces/Vivado/CA_Lab/CEP - Copy/UART/UART_Controller.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module UART_Controller
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/DriveA/Workspaces/Vivado/CA_Lab/CEP - Copy/UART/UART_Datapath.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module UART_Datapath
+INFO: [VRFC 10-311] analyzing module uart_interrupt
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/DriveA/Workspaces/Vivado/CA_Lab/CEP - Copy/Writeback.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Writeback
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/DriveA/Workspaces/Vivado/CA_Lab/CEP - Copy/Pipelined_Processor_tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Processor_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/DriveA/Workspaces/Vivado/CA_Lab/CEP - Copy/CA_CEP_copy.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/DriveA/Workspaces/Vivado/CA_Lab/CEP - Copy/CA_CEP_copy.sim/sim_1/behav/xsim'
+"xelab -wto 4470127e34ce404bb96b929cb9654ad5 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot Processor_tb_behav xil_defaultlib.Processor_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/ProgramFiles/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 4470127e34ce404bb96b929cb9654ad5 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot Processor_tb_behav xil_defaultlib.Processor_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 34 differs from formal bit length 32 for port 'in1' [C:/DriveA/Workspaces/Vivado/CA_Lab/CEP - Copy/CSR_Reg_file.sv:128]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package xil_defaultlib.$unit_ALU_sv
+Compiling module xil_defaultlib.Full_Forwarding_Unit
+Compiling module xil_defaultlib.ControlPath
+Compiling module xil_defaultlib.Counter
+Compiling module xil_defaultlib.MUX2x1
+Compiling module xil_defaultlib.FF_32bit
+Compiling module xil_defaultlib.Instr_Mem
+Compiling module xil_defaultlib.FF_1bit
+Compiling module xil_defaultlib.Fetch
+Compiling module xil_defaultlib.ImmGen
+Compiling module xil_defaultlib.Reg_file
+Compiling module xil_defaultlib.Decode
+Compiling module xil_defaultlib.MUX3x1
+Compiling module xil_defaultlib.BranchCond
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.Execute
+Compiling module xil_defaultlib.Decode_Execute
+Compiling module xil_defaultlib.Load_Store_Unit
+Compiling module xil_defaultlib.Data_Mem
+Compiling module xil_defaultlib.DownClocking_BaudRate
+Compiling module xil_defaultlib.MUX2x1_1bit
+Compiling module xil_defaultlib.D_FlipFlop
+Compiling module xil_defaultlib.ShiftReg_10bit_Tx_default
+Compiling module xil_defaultlib.ShiftReg_10bit_Rx_default
+Compiling module xil_defaultlib.uart_interrupt
+Compiling module xil_defaultlib.UART_Datapath
+Compiling module xil_defaultlib.StateMachine
+Compiling module xil_defaultlib.Comparator_3bit
+Compiling module xil_defaultlib.MUX2x1_4bit
+Compiling module xil_defaultlib.Reloadable_DownCounter
+Compiling module xil_defaultlib.Comparator_4bit
+Compiling module xil_defaultlib.DownCounter_1bit
+Compiling module xil_defaultlib.Edge_to_Pulse
+Compiling module xil_defaultlib.UART_Controller
+Compiling module xil_defaultlib.UART
+Compiling module xil_defaultlib.CSR_Reg_file
+Compiling module xil_defaultlib.Memory
+Compiling module xil_defaultlib.MUX4x1
+Compiling module xil_defaultlib.Writeback
+Compiling module xil_defaultlib.Memory_Writeback
+Compiling module xil_defaultlib.DataPath
+Compiling module xil_defaultlib.Pipelined_Processor
+Compiling module xil_defaultlib.Processor_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot Processor_tb_behav
+ERROR: [Common 17-165] Too many positional options when parsing '-notrace', please type 'webtalk -help' for usage info.
+
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:11 . Memory (MB): peak = 2126.680 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '11' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/DriveA/Workspaces/Vivado/CA_Lab/CEP - Copy/CA_CEP_copy.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Processor_tb_behav -key {Behavioral:sim_1:Functional:Processor_tb} -tclbatch {Processor_tb.tcl} -view {{C:/DriveA/Workspaces/Vivado/CA_Lab/CEP - Copy/Processor_tb_behav.wcfg}} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+open_wave_config {C:/DriveA/Workspaces/Vivado/CA_Lab/CEP - Copy/Processor_tb_behav.wcfg}
+source Processor_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+WARNING: File C:/DriveA/Workspaces/Vivado/CA_Lab/CEP/cep_baud96000_3.mem referenced on C:/DriveA/Workspaces/Vivado/CA_Lab/CEP - Copy/Instr_Mem.sv at line 23 cannot be opened for reading. Please ensure that this file is available in the current working directory.
+xsim: Time (s): cpu = 00:00:05 ; elapsed = 00:00:09 . Memory (MB): peak = 2252.539 ; gain = 110.242
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Processor_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:07 ; elapsed = 00:00:25 . Memory (MB): peak = 2252.539 ; gain = 125.859
+run 1 ms
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:09 . Memory (MB): peak = 2252.539 ; gain = 0.000
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/DriveA/Workspaces/Vivado/CA_Lab/CEP - Copy/CA_CEP_copy.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'Processor_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/DriveA/Workspaces/Vivado/CA_Lab/CEP - Copy/CA_CEP_copy.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj Processor_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/DriveA/Workspaces/Vivado/CA_Lab/CEP - Copy/ALU.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/DriveA/Workspaces/Vivado/CA_Lab/CEP - Copy/BranchCond.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module BranchCond
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/DriveA/Workspaces/Vivado/CA_Lab/CEP - Copy/CSR_Reg_file.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CSR_Reg_file
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/DriveA/Workspaces/Vivado/CA_Lab/CEP - Copy/UART/Comparator_3bit.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Comparator_3bit
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/DriveA/Workspaces/Vivado/CA_Lab/CEP - Copy/UART/Comparator_4bit.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Comparator_4bit
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/DriveA/Workspaces/Vivado/CA_Lab/CEP - Copy/ControlPath.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ControlPath
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/DriveA/Workspaces/Vivado/CA_Lab/CEP - Copy/Counter.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Counter
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/DriveA/Workspaces/Vivado/CA_Lab/CEP - Copy/UART/D_FlipFlop.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module D_FlipFlop
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/DriveA/Workspaces/Vivado/CA_Lab/CEP - Copy/DataPath.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DataPath
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/DriveA/Workspaces/Vivado/CA_Lab/CEP - Copy/Data_Mem.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Data_Mem
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/DriveA/Workspaces/Vivado/CA_Lab/CEP - Copy/Decode.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Decode
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/DriveA/Workspaces/Vivado/CA_Lab/CEP - Copy/Decode_Execute.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Decode_Execute
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/DriveA/Workspaces/Vivado/CA_Lab/CEP - Copy/UART/DownClocking_BaudRate.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DownClocking_BaudRate
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/DriveA/Workspaces/Vivado/CA_Lab/CEP - Copy/UART/DownCounter_1bit.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DownCounter_1bit
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/DriveA/Workspaces/Vivado/CA_Lab/CEP - Copy/UART/Edge_to_Pulse.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Edge_to_Pulse
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/DriveA/Workspaces/Vivado/CA_Lab/CEP - Copy/Execute.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Execute
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/DriveA/Workspaces/Vivado/CA_Lab/CEP - Copy/FF_1bit.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FF_1bit
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/DriveA/Workspaces/Vivado/CA_Lab/CEP - Copy/FF_32bit.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FF_32bit
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/DriveA/Workspaces/Vivado/CA_Lab/CEP - Copy/Fetch.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Fetch
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/DriveA/Workspaces/Vivado/CA_Lab/CEP - Copy/Full_Forwarding_Unit.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Full_Forwarding_Unit
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/DriveA/Workspaces/Vivado/CA_Lab/CEP - Copy/ImmGen.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ImmGen
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/DriveA/Workspaces/Vivado/CA_Lab/CEP - Copy/Instr_Mem.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Instr_Mem
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/DriveA/Workspaces/Vivado/CA_Lab/CEP - Copy/Load_Store_Unit.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Load_Store_Unit
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/DriveA/Workspaces/Vivado/CA_Lab/CEP - Copy/MUX2x1.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MUX2x1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/DriveA/Workspaces/Vivado/CA_Lab/CEP - Copy/UART/MUX2x1_1bit.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MUX2x1_1bit
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/DriveA/Workspaces/Vivado/CA_Lab/CEP - Copy/UART/MUX2x1_4bit.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MUX2x1_4bit
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/DriveA/Workspaces/Vivado/CA_Lab/CEP - Copy/MUX3x1.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MUX3x1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/DriveA/Workspaces/Vivado/CA_Lab/CEP - Copy/MUX4x1.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MUX4x1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/DriveA/Workspaces/Vivado/CA_Lab/CEP - Copy/Memory.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Memory
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/DriveA/Workspaces/Vivado/CA_Lab/CEP - Copy/Memory_Writeback.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Memory_Writeback
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/DriveA/Workspaces/Vivado/CA_Lab/CEP - Copy/Pipelined_Processor.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Pipelined_Processor
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/DriveA/Workspaces/Vivado/CA_Lab/CEP - Copy/Reg_file.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Reg_file
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/DriveA/Workspaces/Vivado/CA_Lab/CEP - Copy/UART/Reloadable_DownCounter.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Reloadable_DownCounter
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/DriveA/Workspaces/Vivado/CA_Lab/CEP - Copy/UART/ShiftReg_10bit_Rx.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ShiftReg_10bit_Rx
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/DriveA/Workspaces/Vivado/CA_Lab/CEP - Copy/UART/ShiftReg_10bit_Tx.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ShiftReg_10bit_Tx
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/DriveA/Workspaces/Vivado/CA_Lab/CEP - Copy/UART/StateMachine.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module StateMachine
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/DriveA/Workspaces/Vivado/CA_Lab/CEP - Copy/UART/UART.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module UART
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/DriveA/Workspaces/Vivado/CA_Lab/CEP - Copy/UART/UART_Controller.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module UART_Controller
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/DriveA/Workspaces/Vivado/CA_Lab/CEP - Copy/UART/UART_Datapath.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module UART_Datapath
+INFO: [VRFC 10-311] analyzing module uart_interrupt
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/DriveA/Workspaces/Vivado/CA_Lab/CEP - Copy/Writeback.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Writeback
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/DriveA/Workspaces/Vivado/CA_Lab/CEP - Copy/Pipelined_Processor_tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Processor_tb
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/DriveA/Workspaces/Vivado/CA_Lab/CEP - Copy/CA_CEP_copy.sim/sim_1/behav/xsim'
+"xelab -wto 4470127e34ce404bb96b929cb9654ad5 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot Processor_tb_behav xil_defaultlib.Processor_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/ProgramFiles/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 4470127e34ce404bb96b929cb9654ad5 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot Processor_tb_behav xil_defaultlib.Processor_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 34 differs from formal bit length 32 for port 'in1' [C:/DriveA/Workspaces/Vivado/CA_Lab/CEP - Copy/CSR_Reg_file.sv:128]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package xil_defaultlib.$unit_ALU_sv
+Compiling module xil_defaultlib.Full_Forwarding_Unit
+Compiling module xil_defaultlib.ControlPath
+Compiling module xil_defaultlib.Counter
+Compiling module xil_defaultlib.MUX2x1
+Compiling module xil_defaultlib.FF_32bit
+Compiling module xil_defaultlib.Instr_Mem
+Compiling module xil_defaultlib.FF_1bit
+Compiling module xil_defaultlib.Fetch
+Compiling module xil_defaultlib.ImmGen
+Compiling module xil_defaultlib.Reg_file
+Compiling module xil_defaultlib.Decode
+Compiling module xil_defaultlib.MUX3x1
+Compiling module xil_defaultlib.BranchCond
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.Execute
+Compiling module xil_defaultlib.Decode_Execute
+Compiling module xil_defaultlib.Load_Store_Unit
+Compiling module xil_defaultlib.Data_Mem
+Compiling module xil_defaultlib.DownClocking_BaudRate
+Compiling module xil_defaultlib.MUX2x1_1bit
+Compiling module xil_defaultlib.D_FlipFlop
+Compiling module xil_defaultlib.ShiftReg_10bit_Tx_default
+Compiling module xil_defaultlib.ShiftReg_10bit_Rx_default
+Compiling module xil_defaultlib.uart_interrupt
+Compiling module xil_defaultlib.UART_Datapath
+Compiling module xil_defaultlib.StateMachine
+Compiling module xil_defaultlib.Comparator_3bit
+Compiling module xil_defaultlib.MUX2x1_4bit
+Compiling module xil_defaultlib.Reloadable_DownCounter
+Compiling module xil_defaultlib.Comparator_4bit
+Compiling module xil_defaultlib.DownCounter_1bit
+Compiling module xil_defaultlib.Edge_to_Pulse
+Compiling module xil_defaultlib.UART_Controller
+Compiling module xil_defaultlib.UART
+Compiling module xil_defaultlib.CSR_Reg_file
+Compiling module xil_defaultlib.Memory
+Compiling module xil_defaultlib.MUX4x1
+Compiling module xil_defaultlib.Writeback
+Compiling module xil_defaultlib.Memory_Writeback
+Compiling module xil_defaultlib.DataPath
+Compiling module xil_defaultlib.Pipelined_Processor
+Compiling module xil_defaultlib.Processor_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot Processor_tb_behav
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:08 . Memory (MB): peak = 2252.539 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '8' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/DriveA/Workspaces/Vivado/CA_Lab/CEP - Copy/CA_CEP_copy.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Processor_tb_behav -key {Behavioral:sim_1:Functional:Processor_tb} -tclbatch {Processor_tb.tcl} -view {{C:/DriveA/Workspaces/Vivado/CA_Lab/CEP - Copy/Processor_tb_behav.wcfg}} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+open_wave_config {C:/DriveA/Workspaces/Vivado/CA_Lab/CEP - Copy/Processor_tb_behav.wcfg}
+source Processor_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+WARNING: File C:/DriveA/Workspaces/Vivado/CA_Lab/CEP-Copy/cep_baud96000_3.mem referenced on C:/DriveA/Workspaces/Vivado/CA_Lab/CEP - Copy/Instr_Mem.sv at line 23 cannot be opened for reading. Please ensure that this file is available in the current working directory.
+xsim: Time (s): cpu = 00:00:03 ; elapsed = 00:00:07 . Memory (MB): peak = 2378.496 ; gain = 96.926
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Processor_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:20 . Memory (MB): peak = 2378.496 ; gain = 125.957
+run 1 ms
+run 1 ms
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 2624.449 ; gain = 0.000
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/DriveA/Workspaces/Vivado/CA_Lab/CEP - Copy/CA_CEP_copy.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'Processor_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/DriveA/Workspaces/Vivado/CA_Lab/CEP - Copy/CA_CEP_copy.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj Processor_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/DriveA/Workspaces/Vivado/CA_Lab/CEP - Copy/ALU.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/DriveA/Workspaces/Vivado/CA_Lab/CEP - Copy/BranchCond.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module BranchCond
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/DriveA/Workspaces/Vivado/CA_Lab/CEP - Copy/CSR_Reg_file.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CSR_Reg_file
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/DriveA/Workspaces/Vivado/CA_Lab/CEP - Copy/UART/Comparator_3bit.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Comparator_3bit
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/DriveA/Workspaces/Vivado/CA_Lab/CEP - Copy/UART/Comparator_4bit.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Comparator_4bit
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/DriveA/Workspaces/Vivado/CA_Lab/CEP - Copy/ControlPath.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ControlPath
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/DriveA/Workspaces/Vivado/CA_Lab/CEP - Copy/Counter.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Counter
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/DriveA/Workspaces/Vivado/CA_Lab/CEP - Copy/UART/D_FlipFlop.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module D_FlipFlop
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/DriveA/Workspaces/Vivado/CA_Lab/CEP - Copy/DataPath.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DataPath
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/DriveA/Workspaces/Vivado/CA_Lab/CEP - Copy/Data_Mem.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Data_Mem
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/DriveA/Workspaces/Vivado/CA_Lab/CEP - Copy/Decode.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Decode
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/DriveA/Workspaces/Vivado/CA_Lab/CEP - Copy/Decode_Execute.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Decode_Execute
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/DriveA/Workspaces/Vivado/CA_Lab/CEP - Copy/UART/DownClocking_BaudRate.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DownClocking_BaudRate
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/DriveA/Workspaces/Vivado/CA_Lab/CEP - Copy/UART/DownCounter_1bit.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DownCounter_1bit
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/DriveA/Workspaces/Vivado/CA_Lab/CEP - Copy/UART/Edge_to_Pulse.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Edge_to_Pulse
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/DriveA/Workspaces/Vivado/CA_Lab/CEP - Copy/Execute.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Execute
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/DriveA/Workspaces/Vivado/CA_Lab/CEP - Copy/FF_1bit.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FF_1bit
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/DriveA/Workspaces/Vivado/CA_Lab/CEP - Copy/FF_32bit.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FF_32bit
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/DriveA/Workspaces/Vivado/CA_Lab/CEP - Copy/Fetch.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Fetch
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/DriveA/Workspaces/Vivado/CA_Lab/CEP - Copy/Full_Forwarding_Unit.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Full_Forwarding_Unit
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/DriveA/Workspaces/Vivado/CA_Lab/CEP - Copy/ImmGen.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ImmGen
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/DriveA/Workspaces/Vivado/CA_Lab/CEP - Copy/Instr_Mem.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Instr_Mem
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/DriveA/Workspaces/Vivado/CA_Lab/CEP - Copy/Load_Store_Unit.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Load_Store_Unit
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/DriveA/Workspaces/Vivado/CA_Lab/CEP - Copy/MUX2x1.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MUX2x1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/DriveA/Workspaces/Vivado/CA_Lab/CEP - Copy/UART/MUX2x1_1bit.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MUX2x1_1bit
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/DriveA/Workspaces/Vivado/CA_Lab/CEP - Copy/UART/MUX2x1_4bit.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MUX2x1_4bit
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/DriveA/Workspaces/Vivado/CA_Lab/CEP - Copy/MUX3x1.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MUX3x1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/DriveA/Workspaces/Vivado/CA_Lab/CEP - Copy/MUX4x1.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MUX4x1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/DriveA/Workspaces/Vivado/CA_Lab/CEP - Copy/Memory.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Memory
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/DriveA/Workspaces/Vivado/CA_Lab/CEP - Copy/Memory_Writeback.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Memory_Writeback
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/DriveA/Workspaces/Vivado/CA_Lab/CEP - Copy/Pipelined_Processor.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Pipelined_Processor
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/DriveA/Workspaces/Vivado/CA_Lab/CEP - Copy/Reg_file.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Reg_file
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/DriveA/Workspaces/Vivado/CA_Lab/CEP - Copy/UART/Reloadable_DownCounter.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Reloadable_DownCounter
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/DriveA/Workspaces/Vivado/CA_Lab/CEP - Copy/UART/ShiftReg_10bit_Rx.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ShiftReg_10bit_Rx
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/DriveA/Workspaces/Vivado/CA_Lab/CEP - Copy/UART/ShiftReg_10bit_Tx.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ShiftReg_10bit_Tx
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/DriveA/Workspaces/Vivado/CA_Lab/CEP - Copy/UART/StateMachine.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module StateMachine
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/DriveA/Workspaces/Vivado/CA_Lab/CEP - Copy/UART/UART.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module UART
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/DriveA/Workspaces/Vivado/CA_Lab/CEP - Copy/UART/UART_Controller.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module UART_Controller
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/DriveA/Workspaces/Vivado/CA_Lab/CEP - Copy/UART/UART_Datapath.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module UART_Datapath
+INFO: [VRFC 10-311] analyzing module uart_interrupt
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/DriveA/Workspaces/Vivado/CA_Lab/CEP - Copy/Writeback.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Writeback
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/DriveA/Workspaces/Vivado/CA_Lab/CEP - Copy/Pipelined_Processor_tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Processor_tb
+INFO: [USF-XSim-69] 'compile' step finished in '4' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/DriveA/Workspaces/Vivado/CA_Lab/CEP - Copy/CA_CEP_copy.sim/sim_1/behav/xsim'
+"xelab -wto 4470127e34ce404bb96b929cb9654ad5 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot Processor_tb_behav xil_defaultlib.Processor_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/ProgramFiles/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 4470127e34ce404bb96b929cb9654ad5 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot Processor_tb_behav xil_defaultlib.Processor_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 34 differs from formal bit length 32 for port 'in1' [C:/DriveA/Workspaces/Vivado/CA_Lab/CEP - Copy/CSR_Reg_file.sv:128]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package xil_defaultlib.$unit_ALU_sv
+Compiling module xil_defaultlib.Full_Forwarding_Unit
+Compiling module xil_defaultlib.ControlPath
+Compiling module xil_defaultlib.Counter
+Compiling module xil_defaultlib.MUX2x1
+Compiling module xil_defaultlib.FF_32bit
+Compiling module xil_defaultlib.Instr_Mem
+Compiling module xil_defaultlib.FF_1bit
+Compiling module xil_defaultlib.Fetch
+Compiling module xil_defaultlib.ImmGen
+Compiling module xil_defaultlib.Reg_file
+Compiling module xil_defaultlib.Decode
+Compiling module xil_defaultlib.MUX3x1
+Compiling module xil_defaultlib.BranchCond
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.Execute
+Compiling module xil_defaultlib.Decode_Execute
+Compiling module xil_defaultlib.Load_Store_Unit
+Compiling module xil_defaultlib.Data_Mem
+Compiling module xil_defaultlib.DownClocking_BaudRate
+Compiling module xil_defaultlib.MUX2x1_1bit
+Compiling module xil_defaultlib.D_FlipFlop
+Compiling module xil_defaultlib.ShiftReg_10bit_Tx_default
+Compiling module xil_defaultlib.ShiftReg_10bit_Rx_default
+Compiling module xil_defaultlib.uart_interrupt
+Compiling module xil_defaultlib.UART_Datapath
+Compiling module xil_defaultlib.StateMachine
+Compiling module xil_defaultlib.Comparator_3bit
+Compiling module xil_defaultlib.MUX2x1_4bit
+Compiling module xil_defaultlib.Reloadable_DownCounter
+Compiling module xil_defaultlib.Comparator_4bit
+Compiling module xil_defaultlib.DownCounter_1bit
+Compiling module xil_defaultlib.Edge_to_Pulse
+Compiling module xil_defaultlib.UART_Controller
+Compiling module xil_defaultlib.UART
+Compiling module xil_defaultlib.CSR_Reg_file
+Compiling module xil_defaultlib.Memory
+Compiling module xil_defaultlib.MUX4x1
+Compiling module xil_defaultlib.Writeback
+Compiling module xil_defaultlib.Memory_Writeback
+Compiling module xil_defaultlib.DataPath
+Compiling module xil_defaultlib.Pipelined_Processor
+Compiling module xil_defaultlib.Processor_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot Processor_tb_behav
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 2624.449 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '7' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/DriveA/Workspaces/Vivado/CA_Lab/CEP - Copy/CA_CEP_copy.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Processor_tb_behav -key {Behavioral:sim_1:Functional:Processor_tb} -tclbatch {Processor_tb.tcl} -view {{C:/DriveA/Workspaces/Vivado/CA_Lab/CEP - Copy/Processor_tb_behav.wcfg}} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+open_wave_config {C:/DriveA/Workspaces/Vivado/CA_Lab/CEP - Copy/Processor_tb_behav.wcfg}
+source Processor_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+xsim: Time (s): cpu = 00:00:03 ; elapsed = 00:00:07 . Memory (MB): peak = 2624.449 ; gain = 0.000
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Processor_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:20 . Memory (MB): peak = 2624.449 ; gain = 0.000
+run 1 ms
+run: Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 2624.449 ; gain = 0.000
+run 1 ms
+run: Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 2624.449 ; gain = 0.000
+run 1 ms
+run: Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 2624.449 ; gain = 0.000
+run 1 ms
+run: Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 2624.449 ; gain = 0.000
+run 1 ms
+run: Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 2624.449 ; gain = 0.000
+run 1 ms
+run: Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 2624.449 ; gain = 0.000
+run 1 ms
+run: Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 2624.449 ; gain = 0.000
+run all
+run: Time (s): cpu = 00:00:44 ; elapsed = 00:01:01 . Memory (MB): peak = 2624.449 ; gain = 0.000
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/DriveA/Workspaces/Vivado/CA_Lab/CEP - Copy/CA_CEP_copy.runs/synth_1
+
+launch_runs synth_1 -jobs 2
+[Wed May  8 15:00:55 2024] Launched synth_1...
+Run output will be captured here: C:/DriveA/Workspaces/Vivado/CA_Lab/CEP - Copy/CA_CEP_copy.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 2
+WARNING: [Project 1-478] Design 'synth_1' is stale and will not be used when launching 'impl_1'
+[Wed May  8 15:34:18 2024] Launched impl_1...
+Run output will be captured here: C:/DriveA/Workspaces/Vivado/CA_Lab/CEP - Copy/CA_CEP_copy.runs/impl_1/runme.log
+current_design impl_1
+place_ports clk E3
+place_ports rst J15
+set_property package_pin "" [get_ports [list  uart_s_in]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list clk]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list rst]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list uart_s_in]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list uart_s_out]]
+place_ports uart_s_in F16
+place_ports uart_s_out D14
+save_constraints -force
+ERROR: [Common 17-53] User Exception: A file was added to constraint set constrs_1 after the  implementation design was open. Doing "Save Constraints" will overwrite these files. Use "Save Constraints As" to avoid losing any data on disk.
+save_constraints_as constrs_2
+set_property constrset constrs_2 [get_runs synth_1]
+set_property constrset constrs_2 [get_runs impl_1]
+reset_run impl_1
+launch_runs impl_1 -jobs 2
+[Wed May  8 15:38:43 2024] Launched impl_1...
+Run output will be captured here: C:/DriveA/Workspaces/Vivado/CA_Lab/CEP - Copy/CA_CEP_copy.runs/impl_1/runme.log
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/DriveA/Workspaces/Vivado/CA_Lab/CEP - Copy/CA_CEP_copy.runs/synth_1
+
+launch_runs impl_1 -jobs 2
+[Wed May  8 15:41:14 2024] Launched synth_1...
+Run output will be captured here: C:/DriveA/Workspaces/Vivado/CA_Lab/CEP - Copy/CA_CEP_copy.runs/synth_1/runme.log
+[Wed May  8 15:41:14 2024] Launched impl_1...
+Run output will be captured here: C:/DriveA/Workspaces/Vivado/CA_Lab/CEP - Copy/CA_CEP_copy.runs/impl_1/runme.log
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:21 . Memory (MB): peak = 2624.449 ; gain = 0.000
+exit
+INFO: [Common 17-206] Exiting Vivado at Wed May  8 19:28:44 2024...

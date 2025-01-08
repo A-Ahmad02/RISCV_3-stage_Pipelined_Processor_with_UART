@@ -1,0 +1,8 @@
+set_property IOSTANDARD LVCMOS33 [get_ports clk]
+set_property IOSTANDARD LVCMOS33 [get_ports rst]
+set_property IOSTANDARD LVCMOS33 [get_ports uart_s_out]
+set_property PACKAGE_PIN J15 [get_ports rst]
+set_property PACKAGE_PIN E3 [get_ports clk]
+set_property IOSTANDARD LVCMOS33 [get_ports uart_s_in]
+set_property PACKAGE_PIN F16 [get_ports uart_s_in]
+set_property PACKAGE_PIN D14 [get_ports uart_s_out]

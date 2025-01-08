@@ -1,0 +1,100 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Wed May  8 13:31:33 2024
+# Process ID: 19524
+# Current directory: C:/DriveA/Workspaces/Vivado/CA_Lab/CEP - Copy
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent7516 C:\DriveA\Workspaces\Vivado\CA_Lab\CEP - Copy\CA_CEP_copy.xpr
+# Log file: C:/DriveA/Workspaces/Vivado/CA_Lab/CEP - Copy/vivado.log
+# Journal file: C:/DriveA/Workspaces/Vivado/CA_Lab/CEP - Copy\vivado.jou
+#-----------------------------------------------------------sstart_guiopen_project {C:/DriveA/Workspaces/Vivado/CA_Lab/CEP - Copy/CA_CEP_copy.xpr}
+}update_compile_order -fileset sources_1
+launch_runs synth_1 -jobs 2
+wait_on_run synth_1
+launch_runs impl_1 -jobs 2
+wait_on_run impl_1
+open_run synth_1 -name synth_1
+open_run impl_1
+current_design synth_1
+place_ports clk E3
+set_property package_pin "" [get_ports [list  rst]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list clk]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list rst]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list uart_s_in]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list uart_s_out]]
+set_property is_loc_fixed false [get_ports [list  clk]]
+place_ports rst J15
+set_property is_loc_fixed true [get_ports [list  clk]]
+set_property package_pin "" [get_ports [list  uart_s_in]]
+set_property package_pin "" [get_ports [list  uart_s_out]]
+set_property package_pin "" [get_ports [list  uart_s_in]]
+set_property IOSTANDARD LVCMOS18 [get_ports [list uart_s_in]]
+set_property package_pin "" [get_ports [list  uart_s_in]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list uart_s_in]]
+set_property package_pin "" [get_ports [list  uart_s_in]]
+place_ports uart_s_in F16
+place_ports uart_s_out D14
+file mkdir {C:/DriveA/Workspaces/Vivado/CA_Lab/CEP - Copy/CA_CEP_copy.srcs/constrs_1/new}
+close [ open {C:/DriveA/Workspaces/Vivado/CA_Lab/CEP - Copy/CA_CEP_copy.srcs/constrs_1/new/UART_CEP.xdc} w ]
+add_files -fileset constrs_1 {{C:/DriveA/Workspaces/Vivado/CA_Lab/CEP - Copy/CA_CEP_copy.srcs/constrs_1/new/UART_CEP.xdc}}
+set_property target_constrs_file {C:/DriveA/Workspaces/Vivado/CA_Lab/CEP - Copy/CA_CEP_copy.srcs/constrs_1/new/UART_CEP.xdc} [current_fileset -constrset]
+save_constraints -force
+reset_run impl_1
+launch_runs impl_1 -jobs 2
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+open_hw
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+close_hw
+launch_simulation
+open_wave_config {C:/DriveA/Workspaces/Vivado/CA_Lab/CEP - Copy/Processor_tb_behav.wcfg}
+source Processor_tb.tcl
+run 1 ms
+close_sim
+launch_simulation
+open_wave_config {C:/DriveA/Workspaces/Vivado/CA_Lab/CEP - Copy/Processor_tb_behav.wcfg}
+source Processor_tb.tcl
+run 1 ms
+run 1 ms
+close_sim
+launch_simulation
+open_wave_config {C:/DriveA/Workspaces/Vivado/CA_Lab/CEP - Copy/Processor_tb_behav.wcfg}
+source Processor_tb.tcl
+run 1 ms
+run 1 ms
+run 1 ms
+run 1 ms
+run 1 ms
+run 1 ms
+run 1 ms
+run all
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+wait_on_run synth_1
+launch_runs impl_1 -jobs 2
+wait_on_run impl_1
+current_design impl_1
+place_ports clk E3
+place_ports rst J15
+set_property package_pin "" [get_ports [list  uart_s_in]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list clk]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list rst]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list uart_s_in]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list uart_s_out]]
+place_ports uart_s_in F16
+place_ports uart_s_out D14
+save_constraints -force
+save_constraints_as constrs_2
+set_property constrset constrs_2 [get_runs synth_1]
+set_property constrset constrs_2 [get_runs impl_1]
+reset_run impl_1
+launch_runs impl_1 -jobs 2
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -jobs 2
+wait_on_run impl_1
+close_sim
