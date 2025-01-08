@@ -1,0 +1,1198 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Wed May  8 00:53:04 2024
+# Process ID: 18196
+# Current directory: C:/DriveA/Workspaces/Vivado/CA_Lab/CEP/CA_CEP.runs/synth_1
+# Command line: vivado.exe -log Pipelined_Processor.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Pipelined_Processor.tcl
+# Log file: C:/DriveA/Workspaces/Vivado/CA_Lab/CEP/CA_CEP.runs/synth_1/Pipelined_Processor.vds
+# Journal file: C:/DriveA/Workspaces/Vivado/CA_Lab/CEP/CA_CEP.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source Pipelined_Processor.tcl -notrace
+Command: synth_design -top Pipelined_Processor -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 16680 
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 563.258 ; gain = 184.199
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'Pipelined_Processor' [C:/DriveA/Workspaces/Vivado/CA_Lab/CEP/Pipelined_Processor.sv:15]
+INFO: [Synth 8-6157] synthesizing module 'ControlPath' [C:/DriveA/Workspaces/Vivado/CA_Lab/CEP/ControlPath.sv:15]
+INFO: [Synth 8-6157] synthesizing module 'Full_Forwarding_Unit' [C:/DriveA/Workspaces/Vivado/CA_Lab/CEP/Full_Forwarding_Unit.sv:15]
+INFO: [Synth 8-6155] done synthesizing module 'Full_Forwarding_Unit' (1#1) [C:/DriveA/Workspaces/Vivado/CA_Lab/CEP/Full_Forwarding_Unit.sv:15]
+WARNING: [Synth 8-151] case item 7'b1100111 is unreachable [C:/DriveA/Workspaces/Vivado/CA_Lab/CEP/ControlPath.sv:83]
+WARNING: [Synth 8-153] case item 7'b010x000 will never be executed [C:/DriveA/Workspaces/Vivado/CA_Lab/CEP/ControlPath.sv:103]
+WARNING: [Synth 8-153] case item 7'b010x101 will never be executed [C:/DriveA/Workspaces/Vivado/CA_Lab/CEP/ControlPath.sv:103]
+WARNING: [Synth 8-153] case item 7'b010x111 will never be executed [C:/DriveA/Workspaces/Vivado/CA_Lab/CEP/ControlPath.sv:103]
+WARNING: [Synth 8-153] case item 7'b010x110 will never be executed [C:/DriveA/Workspaces/Vivado/CA_Lab/CEP/ControlPath.sv:103]
+WARNING: [Synth 8-153] case item 7'b010x100 will never be executed [C:/DriveA/Workspaces/Vivado/CA_Lab/CEP/ControlPath.sv:103]
+WARNING: [Synth 8-153] case item 7'b010x011 will never be executed [C:/DriveA/Workspaces/Vivado/CA_Lab/CEP/ControlPath.sv:103]
+WARNING: [Synth 8-153] case item 7'b010x010 will never be executed [C:/DriveA/Workspaces/Vivado/CA_Lab/CEP/ControlPath.sv:103]
+WARNING: [Synth 8-153] case item 7'b001xxxx will never be executed [C:/DriveA/Workspaces/Vivado/CA_Lab/CEP/ControlPath.sv:103]
+INFO: [Synth 8-6155] done synthesizing module 'ControlPath' (2#1) [C:/DriveA/Workspaces/Vivado/CA_Lab/CEP/ControlPath.sv:15]
+INFO: [Synth 8-6157] synthesizing module 'DataPath' [C:/DriveA/Workspaces/Vivado/CA_Lab/CEP/DataPath.sv:15]
+INFO: [Synth 8-6157] synthesizing module 'Fetch' [C:/DriveA/Workspaces/Vivado/CA_Lab/CEP/Fetch.sv:5]
+INFO: [Synth 8-6157] synthesizing module 'Counter' [C:/DriveA/Workspaces/Vivado/CA_Lab/CEP/Counter.sv:15]
+INFO: [Synth 8-6155] done synthesizing module 'Counter' (3#1) [C:/DriveA/Workspaces/Vivado/CA_Lab/CEP/Counter.sv:15]
+INFO: [Synth 8-6157] synthesizing module 'MUX2x1' [C:/DriveA/Workspaces/Vivado/CA_Lab/CEP/MUX2x1.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'MUX2x1' (4#1) [C:/DriveA/Workspaces/Vivado/CA_Lab/CEP/MUX2x1.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'FF_32bit' [C:/DriveA/Workspaces/Vivado/CA_Lab/CEP/FF_32bit.sv:15]
+INFO: [Synth 8-6155] done synthesizing module 'FF_32bit' (5#1) [C:/DriveA/Workspaces/Vivado/CA_Lab/CEP/FF_32bit.sv:15]
+INFO: [Synth 8-6157] synthesizing module 'Instr_Mem' [C:/DriveA/Workspaces/Vivado/CA_Lab/CEP/Instr_Mem.sv:16]
+INFO: [Synth 8-3876] $readmem data file 'C:/DriveA/Workspaces/Vivado/CA_Lab/CEP/uart7.mem' is read successfully [C:/DriveA/Workspaces/Vivado/CA_Lab/CEP/Instr_Mem.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'Instr_Mem' (6#1) [C:/DriveA/Workspaces/Vivado/CA_Lab/CEP/Instr_Mem.sv:16]
+INFO: [Synth 8-6155] done synthesizing module 'Fetch' (7#1) [C:/DriveA/Workspaces/Vivado/CA_Lab/CEP/Fetch.sv:5]
+INFO: [Synth 8-6157] synthesizing module 'Decode_Execute' [C:/DriveA/Workspaces/Vivado/CA_Lab/CEP/Decode_Execute.sv:14]
+INFO: [Synth 8-6157] synthesizing module 'Decode' [C:/DriveA/Workspaces/Vivado/CA_Lab/CEP/Decode.sv:15]
+INFO: [Synth 8-6157] synthesizing module 'ImmGen' [C:/DriveA/Workspaces/Vivado/CA_Lab/CEP/ImmGen.sv:24]
+INFO: [Synth 8-6155] done synthesizing module 'ImmGen' (8#1) [C:/DriveA/Workspaces/Vivado/CA_Lab/CEP/ImmGen.sv:24]
+INFO: [Synth 8-6157] synthesizing module 'Reg_file' [C:/DriveA/Workspaces/Vivado/CA_Lab/CEP/Reg_file.sv:14]
+INFO: [Synth 8-6155] done synthesizing module 'Reg_file' (9#1) [C:/DriveA/Workspaces/Vivado/CA_Lab/CEP/Reg_file.sv:14]
+INFO: [Synth 8-6155] done synthesizing module 'Decode' (10#1) [C:/DriveA/Workspaces/Vivado/CA_Lab/CEP/Decode.sv:15]
+INFO: [Synth 8-6157] synthesizing module 'Execute' [C:/DriveA/Workspaces/Vivado/CA_Lab/CEP/Execute.sv:5]
+INFO: [Synth 8-6157] synthesizing module 'MUX3x1' [C:/DriveA/Workspaces/Vivado/CA_Lab/CEP/MUX3x1.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'MUX3x1' (11#1) [C:/DriveA/Workspaces/Vivado/CA_Lab/CEP/MUX3x1.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'BranchCond' [C:/DriveA/Workspaces/Vivado/CA_Lab/CEP/BranchCond.sv:24]
+INFO: [Synth 8-226] default block is never used [C:/DriveA/Workspaces/Vivado/CA_Lab/CEP/BranchCond.sv:33]
+INFO: [Synth 8-6155] done synthesizing module 'BranchCond' (12#1) [C:/DriveA/Workspaces/Vivado/CA_Lab/CEP/BranchCond.sv:24]
+INFO: [Synth 8-6157] synthesizing module 'ALU' [C:/DriveA/Workspaces/Vivado/CA_Lab/CEP/ALU.sv:24]
+INFO: [Synth 8-6155] done synthesizing module 'ALU' (13#1) [C:/DriveA/Workspaces/Vivado/CA_Lab/CEP/ALU.sv:24]
+INFO: [Synth 8-6155] done synthesizing module 'Execute' (14#1) [C:/DriveA/Workspaces/Vivado/CA_Lab/CEP/Execute.sv:5]
+INFO: [Synth 8-6155] done synthesizing module 'Decode_Execute' (15#1) [C:/DriveA/Workspaces/Vivado/CA_Lab/CEP/Decode_Execute.sv:14]
+INFO: [Synth 8-6157] synthesizing module 'Memory_Writeback' [C:/DriveA/Workspaces/Vivado/CA_Lab/CEP/Memory_Writeback.sv:15]
+INFO: [Synth 8-6157] synthesizing module 'Memory' [C:/DriveA/Workspaces/Vivado/CA_Lab/CEP/Memory.sv:15]
+INFO: [Synth 8-6157] synthesizing module 'Load_Store_Unit' [C:/DriveA/Workspaces/Vivado/CA_Lab/CEP/Load_Store_Unit.sv:15]
+INFO: [Synth 8-6155] done synthesizing module 'Load_Store_Unit' (16#1) [C:/DriveA/Workspaces/Vivado/CA_Lab/CEP/Load_Store_Unit.sv:15]
+INFO: [Synth 8-6157] synthesizing module 'Data_Mem' [C:/DriveA/Workspaces/Vivado/CA_Lab/CEP/Data_Mem.sv:17]
+WARNING: [Synth 8-2898] ignoring malformed $readmem task: invalid memory name [C:/DriveA/Workspaces/Vivado/CA_Lab/CEP/Data_Mem.sv:27]
+INFO: [Synth 8-6155] done synthesizing module 'Data_Mem' (17#1) [C:/DriveA/Workspaces/Vivado/CA_Lab/CEP/Data_Mem.sv:17]
+INFO: [Synth 8-6157] synthesizing module 'UART' [C:/DriveA/Workspaces/Vivado/CA_Lab/CEP/UART/UART.sv:24]
+INFO: [Synth 8-6157] synthesizing module 'UART_Datapath' [C:/DriveA/Workspaces/Vivado/CA_Lab/CEP/UART/UART_Datapath.sv:24]
+INFO: [Synth 8-6157] synthesizing module 'DownClocking_BaudRate' [C:/DriveA/Workspaces/Vivado/CA_Lab/CEP/UART/DownClocking_BaudRate.sv:24]
+INFO: [Synth 8-6155] done synthesizing module 'DownClocking_BaudRate' (18#1) [C:/DriveA/Workspaces/Vivado/CA_Lab/CEP/UART/DownClocking_BaudRate.sv:24]
+INFO: [Synth 8-6157] synthesizing module 'ShiftReg_10bit_Tx' [C:/DriveA/Workspaces/Vivado/CA_Lab/CEP/UART/ShiftReg_10bit_Tx.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'MUX2x1_1bit' [C:/DriveA/Workspaces/Vivado/CA_Lab/CEP/UART/MUX2x1_1bit.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'MUX2x1_1bit' (19#1) [C:/DriveA/Workspaces/Vivado/CA_Lab/CEP/UART/MUX2x1_1bit.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'D_FlipFlop' [C:/DriveA/Workspaces/Vivado/CA_Lab/CEP/UART/D_FlipFlop.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'D_FlipFlop' (20#1) [C:/DriveA/Workspaces/Vivado/CA_Lab/CEP/UART/D_FlipFlop.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'ShiftReg_10bit_Tx' (21#1) [C:/DriveA/Workspaces/Vivado/CA_Lab/CEP/UART/ShiftReg_10bit_Tx.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'ShiftReg_10bit_Rx' [C:/DriveA/Workspaces/Vivado/CA_Lab/CEP/UART/ShiftReg_10bit_Rx.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'ShiftReg_10bit_Rx' (22#1) [C:/DriveA/Workspaces/Vivado/CA_Lab/CEP/UART/ShiftReg_10bit_Rx.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'uart_interrupt' [C:/DriveA/Workspaces/Vivado/CA_Lab/CEP/UART/UART_Datapath.sv:104]
+INFO: [Synth 8-6155] done synthesizing module 'uart_interrupt' (22#1) [C:/DriveA/Workspaces/Vivado/CA_Lab/CEP/UART/UART_Datapath.sv:104]
+INFO: [Synth 8-6155] done synthesizing module 'UART_Datapath' (23#1) [C:/DriveA/Workspaces/Vivado/CA_Lab/CEP/UART/UART_Datapath.sv:24]
+INFO: [Synth 8-6157] synthesizing module 'UART_Controller' [C:/DriveA/Workspaces/Vivado/CA_Lab/CEP/UART/UART_Controller.sv:24]
+WARNING: [Synth 8-151] case item 32'b00000000000000000000000000010000 is unreachable [C:/DriveA/Workspaces/Vivado/CA_Lab/CEP/UART/UART_Controller.sv:47]
+INFO: [Synth 8-6157] synthesizing module 'StateMachine' [C:/DriveA/Workspaces/Vivado/CA_Lab/CEP/UART/StateMachine.sv:24]
+INFO: [Synth 8-6155] done synthesizing module 'StateMachine' (24#1) [C:/DriveA/Workspaces/Vivado/CA_Lab/CEP/UART/StateMachine.sv:24]
+INFO: [Synth 8-6157] synthesizing module 'Comparator_3bit' [C:/DriveA/Workspaces/Vivado/CA_Lab/CEP/UART/Comparator_3bit.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'Comparator_3bit' (25#1) [C:/DriveA/Workspaces/Vivado/CA_Lab/CEP/UART/Comparator_3bit.sv:23]
+WARNING: [Synth 8-689] width (4) of port connection 'out' does not match port width (32) of module 'MUX2x1' [C:/DriveA/Workspaces/Vivado/CA_Lab/CEP/UART/UART_Controller.sv:65]
+INFO: [Synth 8-6157] synthesizing module 'Reloadable_DownCounter' [C:/DriveA/Workspaces/Vivado/CA_Lab/CEP/UART/Reloadable_DownCounter.sv:24]
+INFO: [Synth 8-6155] done synthesizing module 'Reloadable_DownCounter' (26#1) [C:/DriveA/Workspaces/Vivado/CA_Lab/CEP/UART/Reloadable_DownCounter.sv:24]
+INFO: [Synth 8-6157] synthesizing module 'Comparator_4bit' [C:/DriveA/Workspaces/Vivado/CA_Lab/CEP/UART/Comparator_4bit.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'Comparator_4bit' (27#1) [C:/DriveA/Workspaces/Vivado/CA_Lab/CEP/UART/Comparator_4bit.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'DownCounter_1bit' [C:/DriveA/Workspaces/Vivado/CA_Lab/CEP/UART/DownCounter_1bit.sv:24]
+INFO: [Synth 8-6155] done synthesizing module 'DownCounter_1bit' (28#1) [C:/DriveA/Workspaces/Vivado/CA_Lab/CEP/UART/DownCounter_1bit.sv:24]
+WARNING: [Synth 8-689] width (1) of port connection 'cnt' does not match port width (2) of module 'DownCounter_1bit' [C:/DriveA/Workspaces/Vivado/CA_Lab/CEP/UART/UART_Controller.sv:79]
+INFO: [Synth 8-6155] done synthesizing module 'UART_Controller' (29#1) [C:/DriveA/Workspaces/Vivado/CA_Lab/CEP/UART/UART_Controller.sv:24]
+INFO: [Synth 8-6155] done synthesizing module 'UART' (30#1) [C:/DriveA/Workspaces/Vivado/CA_Lab/CEP/UART/UART.sv:24]
+INFO: [Synth 8-6157] synthesizing module 'CSR_Reg_file' [C:/DriveA/Workspaces/Vivado/CA_Lab/CEP/CSR_Reg_file.sv:14]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/DriveA/Workspaces/Vivado/CA_Lab/CEP/CSR_Reg_file.sv:53]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/DriveA/Workspaces/Vivado/CA_Lab/CEP/CSR_Reg_file.sv:76]
+INFO: [Synth 8-6155] done synthesizing module 'CSR_Reg_file' (31#1) [C:/DriveA/Workspaces/Vivado/CA_Lab/CEP/CSR_Reg_file.sv:14]
+INFO: [Synth 8-6155] done synthesizing module 'Memory' (32#1) [C:/DriveA/Workspaces/Vivado/CA_Lab/CEP/Memory.sv:15]
+INFO: [Synth 8-6157] synthesizing module 'Writeback' [C:/DriveA/Workspaces/Vivado/CA_Lab/CEP/Writeback.sv:5]
+INFO: [Synth 8-6157] synthesizing module 'MUX4x1' [C:/DriveA/Workspaces/Vivado/CA_Lab/CEP/MUX4x1.sv:23]
+INFO: [Synth 8-226] default block is never used [C:/DriveA/Workspaces/Vivado/CA_Lab/CEP/MUX4x1.sv:29]
+INFO: [Synth 8-6155] done synthesizing module 'MUX4x1' (33#1) [C:/DriveA/Workspaces/Vivado/CA_Lab/CEP/MUX4x1.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'Writeback' (34#1) [C:/DriveA/Workspaces/Vivado/CA_Lab/CEP/Writeback.sv:5]
+INFO: [Synth 8-6155] done synthesizing module 'Memory_Writeback' (35#1) [C:/DriveA/Workspaces/Vivado/CA_Lab/CEP/Memory_Writeback.sv:15]
+INFO: [Synth 8-6155] done synthesizing module 'DataPath' (36#1) [C:/DriveA/Workspaces/Vivado/CA_Lab/CEP/DataPath.sv:15]
+INFO: [Synth 8-6155] done synthesizing module 'Pipelined_Processor' (37#1) [C:/DriveA/Workspaces/Vivado/CA_Lab/CEP/Pipelined_Processor.sv:15]
+WARNING: [Synth 8-3331] design Writeback has unconnected port pc[1]
+WARNING: [Synth 8-3331] design Writeback has unconnected port pc[0]
+WARNING: [Synth 8-3331] design CSR_Reg_file has unconnected port e2csr_data[addr][31]
+WARNING: [Synth 8-3331] design CSR_Reg_file has unconnected port e2csr_data[addr][30]
+WARNING: [Synth 8-3331] design CSR_Reg_file has unconnected port e2csr_data[addr][29]
+WARNING: [Synth 8-3331] design CSR_Reg_file has unconnected port e2csr_data[addr][28]
+WARNING: [Synth 8-3331] design CSR_Reg_file has unconnected port e2csr_data[addr][27]
+WARNING: [Synth 8-3331] design CSR_Reg_file has unconnected port e2csr_data[addr][26]
+WARNING: [Synth 8-3331] design CSR_Reg_file has unconnected port e2csr_data[addr][25]
+WARNING: [Synth 8-3331] design CSR_Reg_file has unconnected port e2csr_data[addr][24]
+WARNING: [Synth 8-3331] design CSR_Reg_file has unconnected port e2csr_data[addr][23]
+WARNING: [Synth 8-3331] design CSR_Reg_file has unconnected port e2csr_data[addr][22]
+WARNING: [Synth 8-3331] design CSR_Reg_file has unconnected port e2csr_data[addr][21]
+WARNING: [Synth 8-3331] design CSR_Reg_file has unconnected port e2csr_data[addr][20]
+WARNING: [Synth 8-3331] design CSR_Reg_file has unconnected port e2csr_data[addr][19]
+WARNING: [Synth 8-3331] design CSR_Reg_file has unconnected port e2csr_data[addr][18]
+WARNING: [Synth 8-3331] design CSR_Reg_file has unconnected port e2csr_data[addr][17]
+WARNING: [Synth 8-3331] design CSR_Reg_file has unconnected port e2csr_data[addr][16]
+WARNING: [Synth 8-3331] design CSR_Reg_file has unconnected port e2csr_data[addr][15]
+WARNING: [Synth 8-3331] design CSR_Reg_file has unconnected port e2csr_data[addr][14]
+WARNING: [Synth 8-3331] design CSR_Reg_file has unconnected port e2csr_data[addr][13]
+WARNING: [Synth 8-3331] design CSR_Reg_file has unconnected port e2csr_data[addr][12]
+WARNING: [Synth 8-3331] design CSR_Reg_file has unconnected port csr_pc[1]
+WARNING: [Synth 8-3331] design CSR_Reg_file has unconnected port csr_pc[0]
+WARNING: [Synth 8-3331] design CSR_Reg_file has unconnected port instMW[31]
+WARNING: [Synth 8-3331] design CSR_Reg_file has unconnected port instMW[30]
+WARNING: [Synth 8-3331] design CSR_Reg_file has unconnected port instMW[29]
+WARNING: [Synth 8-3331] design CSR_Reg_file has unconnected port instMW[28]
+WARNING: [Synth 8-3331] design CSR_Reg_file has unconnected port instMW[27]
+WARNING: [Synth 8-3331] design CSR_Reg_file has unconnected port instMW[26]
+WARNING: [Synth 8-3331] design CSR_Reg_file has unconnected port instMW[25]
+WARNING: [Synth 8-3331] design CSR_Reg_file has unconnected port instMW[24]
+WARNING: [Synth 8-3331] design CSR_Reg_file has unconnected port instMW[23]
+WARNING: [Synth 8-3331] design CSR_Reg_file has unconnected port instMW[22]
+WARNING: [Synth 8-3331] design CSR_Reg_file has unconnected port instMW[21]
+WARNING: [Synth 8-3331] design CSR_Reg_file has unconnected port instMW[20]
+WARNING: [Synth 8-3331] design CSR_Reg_file has unconnected port instMW[19]
+WARNING: [Synth 8-3331] design CSR_Reg_file has unconnected port instMW[18]
+WARNING: [Synth 8-3331] design CSR_Reg_file has unconnected port instMW[17]
+WARNING: [Synth 8-3331] design CSR_Reg_file has unconnected port instMW[16]
+WARNING: [Synth 8-3331] design CSR_Reg_file has unconnected port instMW[15]
+WARNING: [Synth 8-3331] design CSR_Reg_file has unconnected port instMW[11]
+WARNING: [Synth 8-3331] design CSR_Reg_file has unconnected port instMW[10]
+WARNING: [Synth 8-3331] design CSR_Reg_file has unconnected port instMW[9]
+WARNING: [Synth 8-3331] design CSR_Reg_file has unconnected port instMW[8]
+WARNING: [Synth 8-3331] design CSR_Reg_file has unconnected port instMW[7]
+WARNING: [Synth 8-3331] design CSR_Reg_file has unconnected port instMW[6]
+WARNING: [Synth 8-3331] design CSR_Reg_file has unconnected port instMW[5]
+WARNING: [Synth 8-3331] design CSR_Reg_file has unconnected port instMW[4]
+WARNING: [Synth 8-3331] design CSR_Reg_file has unconnected port instMW[3]
+WARNING: [Synth 8-3331] design CSR_Reg_file has unconnected port instMW[2]
+WARNING: [Synth 8-3331] design CSR_Reg_file has unconnected port instMW[1]
+WARNING: [Synth 8-3331] design CSR_Reg_file has unconnected port instMW[0]
+WARNING: [Synth 8-3331] design UART_Controller has unconnected port dbus_addr[31]
+WARNING: [Synth 8-3331] design UART_Controller has unconnected port dbus_addr[30]
+WARNING: [Synth 8-3331] design UART_Controller has unconnected port dbus_addr[29]
+WARNING: [Synth 8-3331] design UART_Controller has unconnected port dbus_addr[28]
+WARNING: [Synth 8-3331] design UART_Controller has unconnected port dbus_addr[27]
+WARNING: [Synth 8-3331] design UART_Controller has unconnected port dbus_addr[26]
+WARNING: [Synth 8-3331] design UART_Controller has unconnected port dbus_addr[25]
+WARNING: [Synth 8-3331] design UART_Controller has unconnected port dbus_addr[24]
+WARNING: [Synth 8-3331] design UART_Controller has unconnected port dbus_addr[23]
+WARNING: [Synth 8-3331] design UART_Controller has unconnected port dbus_addr[22]
+WARNING: [Synth 8-3331] design UART_Controller has unconnected port dbus_addr[21]
+WARNING: [Synth 8-3331] design UART_Controller has unconnected port dbus_addr[20]
+WARNING: [Synth 8-3331] design UART_Controller has unconnected port dbus_addr[19]
+WARNING: [Synth 8-3331] design UART_Controller has unconnected port dbus_addr[18]
+WARNING: [Synth 8-3331] design UART_Controller has unconnected port dbus_addr[17]
+WARNING: [Synth 8-3331] design UART_Controller has unconnected port dbus_addr[16]
+WARNING: [Synth 8-3331] design UART_Controller has unconnected port dbus_addr[15]
+WARNING: [Synth 8-3331] design UART_Controller has unconnected port dbus_addr[14]
+WARNING: [Synth 8-3331] design UART_Controller has unconnected port dbus_addr[13]
+WARNING: [Synth 8-3331] design UART_Controller has unconnected port dbus_addr[12]
+WARNING: [Synth 8-3331] design UART_Controller has unconnected port dbus_addr[11]
+WARNING: [Synth 8-3331] design UART_Controller has unconnected port dbus_addr[10]
+WARNING: [Synth 8-3331] design UART_Controller has unconnected port dbus_addr[9]
+WARNING: [Synth 8-3331] design UART_Controller has unconnected port dbus_addr[8]
+WARNING: [Synth 8-3331] design UART_Controller has unconnected port dbus_addr[7]
+WARNING: [Synth 8-3331] design UART_Controller has unconnected port dbus_addr[6]
+WARNING: [Synth 8-3331] design UART_Controller has unconnected port dbus_addr[5]
+WARNING: [Synth 8-3331] design UART_Controller has unconnected port dbus_addr[4]
+WARNING: [Synth 8-3331] design ShiftReg_10bit_Rx has unconnected port data[0]
+WARNING: [Synth 8-3331] design Data_Mem has unconnected port lsu2dmem_data[dbus_addr][31]
+WARNING: [Synth 8-3331] design Data_Mem has unconnected port lsu2dmem_data[dbus_addr][30]
+WARNING: [Synth 8-3331] design Data_Mem has unconnected port lsu2dmem_data[dbus_addr][29]
+WARNING: [Synth 8-3331] design Data_Mem has unconnected port lsu2dmem_data[dbus_addr][28]
+WARNING: [Synth 8-3331] design Data_Mem has unconnected port lsu2dmem_data[dbus_addr][27]
+WARNING: [Synth 8-3331] design Data_Mem has unconnected port lsu2dmem_data[dbus_addr][26]
+WARNING: [Synth 8-3331] design Data_Mem has unconnected port lsu2dmem_data[dbus_addr][25]
+WARNING: [Synth 8-3331] design Data_Mem has unconnected port lsu2dmem_data[dbus_addr][24]
+WARNING: [Synth 8-3331] design Data_Mem has unconnected port lsu2dmem_data[dbus_addr][23]
+WARNING: [Synth 8-3331] design Data_Mem has unconnected port lsu2dmem_data[dbus_addr][22]
+WARNING: [Synth 8-3331] design Data_Mem has unconnected port lsu2dmem_data[dbus_addr][21]
+WARNING: [Synth 8-3331] design Data_Mem has unconnected port lsu2dmem_data[dbus_addr][20]
+WARNING: [Synth 8-3331] design Data_Mem has unconnected port lsu2dmem_data[dbus_addr][19]
+WARNING: [Synth 8-3331] design Data_Mem has unconnected port lsu2dmem_data[dbus_addr][18]
+WARNING: [Synth 8-3331] design Data_Mem has unconnected port lsu2dmem_data[dbus_addr][17]
+WARNING: [Synth 8-3331] design Data_Mem has unconnected port lsu2dmem_data[dbus_addr][16]
+WARNING: [Synth 8-3331] design Data_Mem has unconnected port lsu2dmem_data[dbus_addr][15]
+WARNING: [Synth 8-3331] design Data_Mem has unconnected port lsu2dmem_data[dbus_addr][14]
+INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:32 ; elapsed = 00:01:04 . Memory (MB): peak = 1090.191 ; gain = 711.133
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:34 ; elapsed = 00:01:09 . Memory (MB): peak = 1090.191 ; gain = 711.133
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5580] Multithreading enabled for synth_design using a maximum of 2 processes.
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:35 ; elapsed = 00:01:09 . Memory (MB): peak = 1090.191 ; gain = 711.133
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+INFO: [Synth 8-4471] merging register 'csr_ctr_MW_reg[reg_rd]' into 'csr_ctr_MW_reg[reg_wr]' [C:/DriveA/Workspaces/Vivado/CA_Lab/CEP/ControlPath.sv:61]
+INFO: [Synth 8-5546] ROM "d_ctr" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "R" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "I" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "L" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "jalr" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "S" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "B" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "jal" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5587] ROM size for "e_ctr" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5546] ROM "lui" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "reg_wr" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "auipc" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "csr" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "csr_ctr" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-802] inferred FSM for state register 'current_Tx_reg' in module 'StateMachine'
+INFO: [Synth 8-802] inferred FSM for state register 'current_Rx_reg' in module 'StateMachine'
+INFO: [Synth 8-5545] ROM "mip_clear_mask" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    Idle |                               00 |                              000
+                    Load |                               01 |                              001
+                   Write |                               10 |                              010
+                Transmit |                               11 |                              011
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'current_Tx_reg' using encoding 'sequential' in module 'StateMachine'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    Idle |                               00 |                              000
+                 Receive |                               01 |                              100
+                    Read |                               10 |                              101
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'current_Rx_reg' using encoding 'sequential' in module 'StateMachine'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:15:45 ; elapsed = 00:32:21 . Memory (MB): peak = 1676.215 ; gain = 1297.156
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+---------------+------------+----------+
+|      |RTL Partition  |Replication |Instances |
++------+---------------+------------+----------+
+|1     |Data_Mem__GB0  |           1|     34591|
+|2     |Data_Mem__GB1  |           1|     32798|
+|3     |Data_Mem__GB2  |           1|     22733|
+|4     |Data_Mem__GB3  |           1|     27550|
+|5     |Data_Mem__GB4  |           1|     35534|
+|6     |Data_Mem__GB5  |           1|     44088|
+|7     |Data_Mem__GB6  |           1|     40828|
+|8     |Data_Mem__GB7  |           1|     14391|
+|9     |Data_Mem__GB8  |           1|     38826|
+|10    |Data_Mem__GB9  |           1|     14337|
+|11    |Data_Mem__GB10 |           1|     15426|
+|12    |Memory__GC0    |           1|      5042|
+|13    |Writeback      |           1|       317|
+|14    |DataPath__GC0  |           1|      8446|
+|15    |ControlPath    |           1|       431|
++------+---------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 2     
+	   3 Input     32 Bit       Adders := 1     
+	   2 Input     30 Bit       Adders := 2     
+	   2 Input      6 Bit       Adders := 3     
+	   2 Input      4 Bit       Adders := 2     
+	   2 Input      2 Bit       Adders := 3     
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
+	   2 Input      1 Bit         XORs := 3     
++---Registers : 
+	               32 Bit    Registers := 54    
+	                8 Bit    Registers := 2048  
+	                4 Bit    Registers := 2     
+	                2 Bit    Registers := 3     
+	                1 Bit    Registers := 29    
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 29    
+	   3 Input     32 Bit        Muxes := 5     
+	   7 Input     32 Bit        Muxes := 1     
+	   4 Input     32 Bit        Muxes := 6     
+	   9 Input     32 Bit        Muxes := 1     
+	   8 Input     32 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 2046  
+	   4 Input      8 Bit        Muxes := 1149  
+	  65 Input      8 Bit        Muxes := 4     
+	  13 Input      4 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 10    
+	   4 Input      3 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 1     
+	  11 Input      3 Bit        Muxes := 2     
+	   3 Input      3 Bit        Muxes := 1     
+	   7 Input      3 Bit        Muxes := 1     
+	  11 Input      2 Bit        Muxes := 2     
+	   4 Input      2 Bit        Muxes := 127   
+	   2 Input      2 Bit        Muxes := 10    
+	   3 Input      2 Bit        Muxes := 1     
+	  11 Input      1 Bit        Muxes := 16    
+	   4 Input      1 Bit        Muxes := 2045  
+	   2 Input      1 Bit        Muxes := 2190  
+	   3 Input      1 Bit        Muxes := 6     
+	   6 Input      1 Bit        Muxes := 5     
+	   5 Input      1 Bit        Muxes := 3     
+	  12 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module Full_Forwarding_Unit 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      2 Bit       Adders := 2     
+Module ControlPath 
+Detailed RTL Component Info : 
++---Registers : 
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 5     
++---Muxes : 
+	  13 Input      4 Bit        Muxes := 1     
+	   4 Input      3 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 1     
+	  11 Input      3 Bit        Muxes := 2     
+	  11 Input      2 Bit        Muxes := 2     
+	  11 Input      1 Bit        Muxes := 16    
+Module Data_Mem 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 2048  
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 2046  
+	   4 Input      8 Bit        Muxes := 1149  
+	   4 Input      2 Bit        Muxes := 126   
+	   4 Input      1 Bit        Muxes := 2045  
+	   2 Input      1 Bit        Muxes := 2057  
+Module Load_Store_Unit 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 5     
+	   3 Input     32 Bit        Muxes := 5     
+	   3 Input      1 Bit        Muxes := 6     
+Module DownClocking_BaudRate__1 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module DownClocking_BaudRate 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module MUX2x1__5 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+Module FF_32bit__7 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module MUX2x1__6 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+Module FF_32bit__8 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module MUX2x1__7 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+Module FF_32bit__9 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module MUX2x1__8 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+Module FF_32bit__10 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module MUX2x1__9 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+Module FF_32bit__11 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module MUX2x1_1bit__1 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module D_FlipFlop__10 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 3     
+Module MUX2x1_1bit__2 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module D_FlipFlop__11 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 3     
+Module MUX2x1_1bit__3 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module D_FlipFlop__12 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 3     
+Module MUX2x1_1bit__4 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module D_FlipFlop__13 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 3     
+Module MUX2x1_1bit__5 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module D_FlipFlop__14 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 3     
+Module MUX2x1_1bit__6 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module D_FlipFlop__15 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 3     
+Module MUX2x1_1bit__7 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module D_FlipFlop__16 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 3     
+Module MUX2x1_1bit__8 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module D_FlipFlop__17 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 3     
+Module MUX2x1_1bit__9 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module D_FlipFlop__18 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 3     
+Module MUX2x1_1bit 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module D_FlipFlop 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 3     
+Module D_FlipFlop__1 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 3     
+Module D_FlipFlop__2 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 3     
+Module D_FlipFlop__3 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 3     
+Module D_FlipFlop__4 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 3     
+Module D_FlipFlop__5 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 3     
+Module D_FlipFlop__6 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 3     
+Module D_FlipFlop__7 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 3     
+Module D_FlipFlop__8 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 3     
+Module D_FlipFlop__9 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 3     
+Module MUX2x1__10 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+Module FF_32bit__12 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module FF_32bit__13 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module UART_Datapath 
+Detailed RTL Component Info : 
++---Registers : 
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+Module StateMachine 
+Detailed RTL Component Info : 
++---Muxes : 
+	   3 Input      3 Bit        Muxes := 1     
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 8     
+	   3 Input      2 Bit        Muxes := 1     
+Module MUX2x1__4 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+Module Reloadable_DownCounter__1 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	                4 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 5     
+Module DownCounter_1bit 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	                2 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      2 Bit        Muxes := 2     
+Module Reloadable_DownCounter 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	                4 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 5     
+Module UART_Controller 
+Detailed RTL Component Info : 
++---Muxes : 
+	   6 Input      1 Bit        Muxes := 5     
+Module MUX2x1__1 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+Module FF_32bit__1 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module FF_32bit__2 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module FF_32bit__3 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module FF_32bit__4 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module FF_32bit__5 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module FF_32bit__6 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module MUX2x1__2 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+Module MUX2x1__3 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+Module CSR_Reg_file 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---Muxes : 
+	   7 Input     32 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 6     
+	   4 Input     32 Bit        Muxes := 3     
+	   9 Input     32 Bit        Muxes := 1     
+	   7 Input      3 Bit        Muxes := 1     
+	   5 Input      1 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 3     
+Module Counter__1 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     30 Bit       Adders := 1     
+Module MUX4x1 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input     32 Bit        Muxes := 1     
+Module Counter 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     30 Bit       Adders := 1     
+Module MUX2x1__13 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+Module MUX2x1 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+Module FF_32bit 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module Instr_Mem 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      6 Bit       Adders := 3     
++---Muxes : 
+	  65 Input      8 Bit        Muxes := 4     
+Module ImmGen 
+Detailed RTL Component Info : 
++---Muxes : 
+	   8 Input     32 Bit        Muxes := 1     
+Module Reg_file 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 32    
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 63    
+Module MUX3x1__1 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input     32 Bit        Muxes := 1     
+Module MUX3x1 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input     32 Bit        Muxes := 1     
+Module MUX2x1__11 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+Module MUX2x1__12 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+Module ALU 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+	   3 Input     32 Bit       Adders := 1     
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
+	   2 Input      1 Bit         XORs := 3     
++---Muxes : 
+	  12 Input      1 Bit        Muxes := 1     
+Module DataPath 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 8     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "csr" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "jalr" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "jal" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "lui" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "auipc" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "B" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "L" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "S" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "I" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "R" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "reg_wr" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "d_ctr" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5587] ROM size for "e_ctr" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5546] ROM "csr_ctr" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-3886] merging instance 'MEMi_11/CSR_Reg/CSR_MIE_FF/q_reg[0]' (FDCE) to 'MEMi_11/CSR_Reg/CSR_MIE_FF/q_reg[1]'
+INFO: [Synth 8-3886] merging instance 'MEMi_11/CSR_Reg/CSR_MSTAT_FF/q_reg[0]' (FDCE) to 'MEMi_11/CSR_Reg/CSR_MSTAT_FF/q_reg[1]'
+INFO: [Synth 8-3886] merging instance 'MEMi_11/CSR_Reg/CSR_MIE_FF/q_reg[1]' (FDCE) to 'MEMi_11/CSR_Reg/CSR_MIE_FF/q_reg[2]'
+INFO: [Synth 8-3886] merging instance 'MEMi_11/CSR_Reg/CSR_MSTAT_FF/q_reg[1]' (FDCE) to 'MEMi_11/CSR_Reg/CSR_MSTAT_FF/q_reg[2]'
+INFO: [Synth 8-3886] merging instance 'MEMi_11/CSR_Reg/CSR_MIE_FF/q_reg[2]' (FDCE) to 'MEMi_11/CSR_Reg/CSR_MIE_FF/q_reg[4]'
+INFO: [Synth 8-3886] merging instance 'MEMi_11/CSR_Reg/CSR_MSTAT_FF/q_reg[2]' (FDCE) to 'MEMi_11/CSR_Reg/CSR_MSTAT_FF/q_reg[4]'
+INFO: [Synth 8-3886] merging instance 'MEMi_11/CSR_Reg/CSR_MIE_FF/q_reg[4]' (FDCE) to 'MEMi_11/CSR_Reg/CSR_MIE_FF/q_reg[5]'
+INFO: [Synth 8-3886] merging instance 'MEMi_11/CSR_Reg/CSR_MSTAT_FF/q_reg[4]' (FDCE) to 'MEMi_11/CSR_Reg/CSR_MSTAT_FF/q_reg[5]'
+INFO: [Synth 8-3886] merging instance 'MEMi_11/CSR_Reg/CSR_MIE_FF/q_reg[5]' (FDCE) to 'MEMi_11/CSR_Reg/CSR_MIE_FF/q_reg[6]'
+INFO: [Synth 8-3886] merging instance 'MEMi_11/CSR_Reg/CSR_MSTAT_FF/q_reg[5]' (FDCE) to 'MEMi_11/CSR_Reg/CSR_MSTAT_FF/q_reg[6]'
+INFO: [Synth 8-3886] merging instance 'MEMi_11/CSR_Reg/CSR_MIE_FF/q_reg[6]' (FDCE) to 'MEMi_11/CSR_Reg/CSR_MIE_FF/q_reg[8]'
+INFO: [Synth 8-3886] merging instance 'MEMi_11/CSR_Reg/CSR_MSTAT_FF/q_reg[6]' (FDCE) to 'MEMi_11/CSR_Reg/CSR_MSTAT_FF/q_reg[8]'
+INFO: [Synth 8-3886] merging instance 'MEMi_11/CSR_Reg/CSR_MIE_FF/q_reg[8]' (FDCE) to 'MEMi_11/CSR_Reg/CSR_MIE_FF/q_reg[9]'
+INFO: [Synth 8-3886] merging instance 'MEMi_11/CSR_Reg/CSR_MSTAT_FF/q_reg[8]' (FDCE) to 'MEMi_11/CSR_Reg/CSR_MSTAT_FF/q_reg[9]'
+INFO: [Synth 8-3886] merging instance 'MEMi_11/CSR_Reg/CSR_MIE_FF/q_reg[9]' (FDCE) to 'MEMi_11/CSR_Reg/CSR_MIE_FF/q_reg[10]'
+INFO: [Synth 8-3886] merging instance 'MEMi_11/CSR_Reg/CSR_MSTAT_FF/q_reg[9]' (FDCE) to 'MEMi_11/CSR_Reg/CSR_MSTAT_FF/q_reg[10]'
+INFO: [Synth 8-3886] merging instance 'MEMi_11/CSR_Reg/CSR_MIE_FF/q_reg[10]' (FDCE) to 'MEMi_11/CSR_Reg/CSR_MIE_FF/q_reg[12]'
+INFO: [Synth 8-3886] merging instance 'MEMi_11/CSR_Reg/CSR_MSTAT_FF/q_reg[10]' (FDCE) to 'MEMi_11/CSR_Reg/CSR_MSTAT_FF/q_reg[13]'
+INFO: [Synth 8-3886] merging instance 'MEMi_11/CSR_Reg/CSR_MSTAT_FF/q_reg[11]' (FDCE) to 'MEMi_11/CSR_Reg/CSR_MSTAT_FF/q_reg[12]'
+INFO: [Synth 8-3886] merging instance 'MEMi_11/CSR_Reg/CSR_MIE_FF/q_reg[12]' (FDCE) to 'MEMi_11/CSR_Reg/CSR_MIE_FF/q_reg[13]'
+INFO: [Synth 8-3886] merging instance 'MEMi_11/CSR_Reg/CSR_MIE_FF/q_reg[13]' (FDCE) to 'MEMi_11/CSR_Reg/CSR_MIE_FF/q_reg[14]'
+INFO: [Synth 8-3886] merging instance 'MEMi_11/CSR_Reg/CSR_MSTAT_FF/q_reg[13]' (FDCE) to 'MEMi_11/CSR_Reg/CSR_MSTAT_FF/q_reg[14]'
+INFO: [Synth 8-3886] merging instance 'MEMi_11/CSR_Reg/CSR_MIE_FF/q_reg[14]' (FDCE) to 'MEMi_11/CSR_Reg/CSR_MIE_FF/q_reg[15]'
+INFO: [Synth 8-3886] merging instance 'MEMi_11/CSR_Reg/CSR_MSTAT_FF/q_reg[14]' (FDCE) to 'MEMi_11/CSR_Reg/CSR_MSTAT_FF/q_reg[15]'
+INFO: [Synth 8-3886] merging instance 'MEMi_11/CSR_Reg/CSR_MIE_FF/q_reg[15]' (FDCE) to 'MEMi_11/CSR_Reg/CSR_MIE_FF/q_reg[16]'
+INFO: [Synth 8-3886] merging instance 'MEMi_11/CSR_Reg/CSR_MSTAT_FF/q_reg[15]' (FDCE) to 'MEMi_11/CSR_Reg/CSR_MSTAT_FF/q_reg[16]'
+INFO: [Synth 8-3886] merging instance 'MEMi_11/CSR_Reg/CSR_MSTAT_FF/q_reg[16]' (FDCE) to 'MEMi_11/CSR_Reg/CSR_MSTAT_FF/q_reg[17]'
+INFO: [Synth 8-3886] merging instance 'MEMi_11/CSR_Reg/CSR_MIE_FF/q_reg[17]' (FDCE) to 'MEMi_11/CSR_Reg/CSR_MIE_FF/q_reg[16]'
+INFO: [Synth 8-3886] merging instance 'MEMi_11/CSR_Reg/CSR_MSTAT_FF/q_reg[17]' (FDCE) to 'MEMi_11/CSR_Reg/CSR_MSTAT_FF/q_reg[18]'
+INFO: [Synth 8-3886] merging instance 'MEMi_11/CSR_Reg/CSR_MIE_FF/q_reg[18]' (FDCE) to 'MEMi_11/CSR_Reg/CSR_MIE_FF/q_reg[16]'
+INFO: [Synth 8-3886] merging instance 'MEMi_11/CSR_Reg/CSR_MSTAT_FF/q_reg[18]' (FDCE) to 'MEMi_11/CSR_Reg/CSR_MSTAT_FF/q_reg[19]'
+INFO: [Synth 8-3886] merging instance 'MEMi_11/CSR_Reg/CSR_MIE_FF/q_reg[19]' (FDCE) to 'MEMi_11/CSR_Reg/CSR_MIE_FF/q_reg[16]'
+INFO: [Synth 8-3886] merging instance 'MEMi_11/CSR_Reg/CSR_MSTAT_FF/q_reg[19]' (FDCE) to 'MEMi_11/CSR_Reg/CSR_MSTAT_FF/q_reg[20]'
+INFO: [Synth 8-3886] merging instance 'MEMi_11/CSR_Reg/CSR_MIE_FF/q_reg[20]' (FDCE) to 'MEMi_11/CSR_Reg/CSR_MIE_FF/q_reg[16]'
+INFO: [Synth 8-3886] merging instance 'MEMi_11/CSR_Reg/CSR_MSTAT_FF/q_reg[20]' (FDCE) to 'MEMi_11/CSR_Reg/CSR_MSTAT_FF/q_reg[21]'
+INFO: [Synth 8-3886] merging instance 'MEMi_11/CSR_Reg/CSR_MIE_FF/q_reg[21]' (FDCE) to 'MEMi_11/CSR_Reg/CSR_MIE_FF/q_reg[16]'
+INFO: [Synth 8-3886] merging instance 'MEMi_11/CSR_Reg/CSR_MSTAT_FF/q_reg[21]' (FDCE) to 'MEMi_11/CSR_Reg/CSR_MSTAT_FF/q_reg[22]'
+INFO: [Synth 8-3886] merging instance 'MEMi_11/CSR_Reg/CSR_MIE_FF/q_reg[22]' (FDCE) to 'MEMi_11/CSR_Reg/CSR_MIE_FF/q_reg[16]'
+INFO: [Synth 8-3886] merging instance 'MEMi_11/CSR_Reg/CSR_MSTAT_FF/q_reg[22]' (FDCE) to 'MEMi_11/CSR_Reg/CSR_MSTAT_FF/q_reg[23]'
+INFO: [Synth 8-3886] merging instance 'MEMi_11/CSR_Reg/CSR_MIE_FF/q_reg[23]' (FDCE) to 'MEMi_11/CSR_Reg/CSR_MIE_FF/q_reg[16]'
+INFO: [Synth 8-3886] merging instance 'MEMi_11/CSR_Reg/CSR_MSTAT_FF/q_reg[23]' (FDCE) to 'MEMi_11/CSR_Reg/CSR_MSTAT_FF/q_reg[24]'
+INFO: [Synth 8-3886] merging instance 'MEMi_11/CSR_Reg/CSR_MIE_FF/q_reg[24]' (FDCE) to 'MEMi_11/CSR_Reg/CSR_MIE_FF/q_reg[16]'
+INFO: [Synth 8-3886] merging instance 'MEMi_11/CSR_Reg/CSR_MSTAT_FF/q_reg[24]' (FDCE) to 'MEMi_11/CSR_Reg/CSR_MSTAT_FF/q_reg[25]'
+INFO: [Synth 8-3886] merging instance 'MEMi_11/CSR_Reg/CSR_MIE_FF/q_reg[25]' (FDCE) to 'MEMi_11/CSR_Reg/CSR_MIE_FF/q_reg[16]'
+INFO: [Synth 8-3886] merging instance 'MEMi_11/CSR_Reg/CSR_MSTAT_FF/q_reg[25]' (FDCE) to 'MEMi_11/CSR_Reg/CSR_MSTAT_FF/q_reg[26]'
+INFO: [Synth 8-3886] merging instance 'MEMi_11/CSR_Reg/CSR_MSTAT_FF/q_reg[26]' (FDCE) to 'MEMi_11/CSR_Reg/CSR_MSTAT_FF/q_reg[27]'
+INFO: [Synth 8-3886] merging instance 'MEMi_11/CSR_Reg/CSR_MSTAT_FF/q_reg[27]' (FDCE) to 'MEMi_11/CSR_Reg/CSR_MSTAT_FF/q_reg[28]'
+INFO: [Synth 8-3886] merging instance 'MEMi_11/CSR_Reg/CSR_MSTAT_FF/q_reg[28]' (FDCE) to 'MEMi_11/CSR_Reg/CSR_MSTAT_FF/q_reg[29]'
+INFO: [Synth 8-3886] merging instance 'MEMi_11/CSR_Reg/CSR_MSTAT_FF/q_reg[29]' (FDCE) to 'MEMi_11/CSR_Reg/CSR_MSTAT_FF/q_reg[30]'
+INFO: [Synth 8-3886] merging instance 'MEMi_11/CSR_Reg/CSR_MSTAT_FF/q_reg[30]' (FDCE) to 'MEMi_11/CSR_Reg/CSR_MSTAT_FF/q_reg[31]'
+INFO: [Synth 8-3886] merging instance 'MEMi_11/CSR_Reg/CSR_MCAUSE_FF/q_reg[30]' (FDC) to 'MEMi_11/CSR_Reg/CSR_MCAUSE_FF/q_reg[4]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\CSR_Reg/CSR_MSTAT_FF/q_reg[31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\CSR_Reg/CSR_MIE_FF/q_reg[16] )
+INFO: [Synth 8-3886] merging instance 'MEMi_11/CSR_Reg/CSR_MEPC_FF/q_reg[0]' (FDCE) to 'MEMi_11/CSR_Reg/CSR_MEPC_FF/q_reg[1]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\CSR_Reg/CSR_MEPC_FF/q_reg[1] )
+INFO: [Synth 8-3886] merging instance 'MEMi_11/CSR_Reg/CSR_MCAUSE_FF/q_reg[4]' (FDC) to 'MEMi_11/CSR_Reg/CSR_MCAUSE_FF/q_reg[5]'
+INFO: [Synth 8-3886] merging instance 'MEMi_11/CSR_Reg/CSR_MCAUSE_FF/q_reg[5]' (FDC) to 'MEMi_11/CSR_Reg/CSR_MCAUSE_FF/q_reg[6]'
+INFO: [Synth 8-3886] merging instance 'MEMi_11/CSR_Reg/CSR_MCAUSE_FF/q_reg[6]' (FDC) to 'MEMi_11/CSR_Reg/CSR_MCAUSE_FF/q_reg[7]'
+INFO: [Synth 8-3886] merging instance 'MEMi_11/CSR_Reg/CSR_MCAUSE_FF/q_reg[7]' (FDC) to 'MEMi_11/CSR_Reg/CSR_MCAUSE_FF/q_reg[8]'
+INFO: [Synth 8-3886] merging instance 'MEMi_11/CSR_Reg/CSR_MCAUSE_FF/q_reg[8]' (FDC) to 'MEMi_11/CSR_Reg/CSR_MCAUSE_FF/q_reg[9]'
+INFO: [Synth 8-3886] merging instance 'MEMi_11/CSR_Reg/CSR_MCAUSE_FF/q_reg[9]' (FDC) to 'MEMi_11/CSR_Reg/CSR_MCAUSE_FF/q_reg[10]'
+INFO: [Synth 8-3886] merging instance 'MEMi_11/CSR_Reg/CSR_MCAUSE_FF/q_reg[10]' (FDC) to 'MEMi_11/CSR_Reg/CSR_MCAUSE_FF/q_reg[11]'
+INFO: [Synth 8-3886] merging instance 'MEMi_11/CSR_Reg/CSR_MCAUSE_FF/q_reg[11]' (FDC) to 'MEMi_11/CSR_Reg/CSR_MCAUSE_FF/q_reg[12]'
+INFO: [Synth 8-3886] merging instance 'MEMi_11/CSR_Reg/CSR_MCAUSE_FF/q_reg[12]' (FDC) to 'MEMi_11/CSR_Reg/CSR_MCAUSE_FF/q_reg[13]'
+INFO: [Synth 8-3886] merging instance 'MEMi_11/CSR_Reg/CSR_MCAUSE_FF/q_reg[13]' (FDC) to 'MEMi_11/CSR_Reg/CSR_MCAUSE_FF/q_reg[14]'
+INFO: [Synth 8-3886] merging instance 'MEMi_11/CSR_Reg/CSR_MCAUSE_FF/q_reg[14]' (FDC) to 'MEMi_11/CSR_Reg/CSR_MCAUSE_FF/q_reg[15]'
+INFO: [Synth 8-3886] merging instance 'MEMi_11/CSR_Reg/CSR_MCAUSE_FF/q_reg[15]' (FDC) to 'MEMi_11/CSR_Reg/CSR_MCAUSE_FF/q_reg[16]'
+INFO: [Synth 8-3886] merging instance 'MEMi_11/CSR_Reg/CSR_MCAUSE_FF/q_reg[16]' (FDC) to 'MEMi_11/CSR_Reg/CSR_MCAUSE_FF/q_reg[17]'
+INFO: [Synth 8-3886] merging instance 'MEMi_11/CSR_Reg/CSR_MCAUSE_FF/q_reg[17]' (FDC) to 'MEMi_11/CSR_Reg/CSR_MCAUSE_FF/q_reg[18]'
+INFO: [Synth 8-3886] merging instance 'MEMi_11/CSR_Reg/CSR_MCAUSE_FF/q_reg[18]' (FDC) to 'MEMi_11/CSR_Reg/CSR_MCAUSE_FF/q_reg[19]'
+INFO: [Synth 8-3886] merging instance 'MEMi_11/CSR_Reg/CSR_MCAUSE_FF/q_reg[19]' (FDC) to 'MEMi_11/CSR_Reg/CSR_MCAUSE_FF/q_reg[20]'
+INFO: [Synth 8-3886] merging instance 'MEMi_11/CSR_Reg/CSR_MCAUSE_FF/q_reg[20]' (FDC) to 'MEMi_11/CSR_Reg/CSR_MCAUSE_FF/q_reg[21]'
+INFO: [Synth 8-3886] merging instance 'MEMi_11/CSR_Reg/CSR_MCAUSE_FF/q_reg[21]' (FDC) to 'MEMi_11/CSR_Reg/CSR_MCAUSE_FF/q_reg[22]'
+INFO: [Synth 8-3886] merging instance 'MEMi_11/CSR_Reg/CSR_MCAUSE_FF/q_reg[22]' (FDC) to 'MEMi_11/CSR_Reg/CSR_MCAUSE_FF/q_reg[23]'
+INFO: [Synth 8-3886] merging instance 'MEMi_11/CSR_Reg/CSR_MCAUSE_FF/q_reg[23]' (FDC) to 'MEMi_11/CSR_Reg/CSR_MCAUSE_FF/q_reg[24]'
+INFO: [Synth 8-3886] merging instance 'MEMi_11/CSR_Reg/CSR_MCAUSE_FF/q_reg[24]' (FDC) to 'MEMi_11/CSR_Reg/CSR_MCAUSE_FF/q_reg[25]'
+INFO: [Synth 8-3886] merging instance 'MEMi_11/CSR_Reg/CSR_MCAUSE_FF/q_reg[25]' (FDC) to 'MEMi_11/CSR_Reg/CSR_MCAUSE_FF/q_reg[26]'
+INFO: [Synth 8-3886] merging instance 'MEMi_11/CSR_Reg/CSR_MCAUSE_FF/q_reg[26]' (FDC) to 'MEMi_11/CSR_Reg/CSR_MCAUSE_FF/q_reg[27]'
+INFO: [Synth 8-3886] merging instance 'MEMi_11/CSR_Reg/CSR_MCAUSE_FF/q_reg[27]' (FDC) to 'MEMi_11/CSR_Reg/CSR_MCAUSE_FF/q_reg[28]'
+INFO: [Synth 8-3886] merging instance 'MEMi_11/CSR_Reg/CSR_MCAUSE_FF/q_reg[28]' (FDC) to 'MEMi_11/CSR_Reg/CSR_MCAUSE_FF/q_reg[29]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\CSR_Reg/CSR_MCAUSE_FF/q_reg[29] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U/DP/U_IE/q_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U/DP/U_IE/q_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U/DP/U_IE/q_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U/DP/U_IE/q_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U/DP/U_IE/q_reg[4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U/DP/U_IE/q_reg[5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U/DP/U_IE/q_reg[6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U/DP/U_IE/q_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U/DP/U_IE/q_reg[8] )
+INFO: [Synth 8-3886] merging instance 'MEMi_11/U/DP/U_Rx_DATA/q_reg[8]' (FDCE) to 'MEMi_11/U/DP/U_Rx_DATA/q_reg[9]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U/DP/U_IE/q_reg[9] )
+INFO: [Synth 8-3886] merging instance 'MEMi_11/U/DP/U_Rx_DATA/q_reg[9]' (FDCE) to 'MEMi_11/U/DP/U_Rx_DATA/q_reg[10]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U/DP/U_IE/q_reg[10] )
+INFO: [Synth 8-3886] merging instance 'MEMi_11/U/DP/U_Rx_DATA/q_reg[10]' (FDCE) to 'MEMi_11/U/DP/U_Rx_DATA/q_reg[11]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U/DP/U_IE/q_reg[11] )
+INFO: [Synth 8-3886] merging instance 'MEMi_11/U/DP/U_Rx_DATA/q_reg[11]' (FDCE) to 'MEMi_11/U/DP/U_Rx_DATA/q_reg[12]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U/DP/U_IE/q_reg[12] )
+INFO: [Synth 8-3886] merging instance 'MEMi_11/U/DP/U_Rx_DATA/q_reg[12]' (FDCE) to 'MEMi_11/U/DP/U_Rx_DATA/q_reg[13]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U/DP/U_IE/q_reg[13] )
+INFO: [Synth 8-3886] merging instance 'MEMi_11/U/DP/U_Rx_DATA/q_reg[13]' (FDCE) to 'MEMi_11/U/DP/U_Rx_DATA/q_reg[14]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U/DP/U_IE/q_reg[14] )
+INFO: [Synth 8-3886] merging instance 'MEMi_11/U/DP/U_Rx_DATA/q_reg[14]' (FDCE) to 'MEMi_11/U/DP/U_Rx_DATA/q_reg[15]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U/DP/U_IE/q_reg[15] )
+INFO: [Synth 8-3886] merging instance 'MEMi_11/U/DP/U_Rx_DATA/q_reg[15]' (FDCE) to 'MEMi_11/U/DP/U_Rx_DATA/q_reg[16]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U/DP/U_IE/q_reg[16] )
+INFO: [Synth 8-3886] merging instance 'MEMi_11/U/DP/U_Rx_DATA/q_reg[16]' (FDCE) to 'MEMi_11/U/DP/U_Rx_DATA/q_reg[17]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U/DP/U_IE/q_reg[17] )
+INFO: [Synth 8-3886] merging instance 'MEMi_11/U/DP/U_Rx_DATA/q_reg[17]' (FDCE) to 'MEMi_11/U/DP/U_Rx_DATA/q_reg[18]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U/DP/U_IE/q_reg[18] )
+INFO: [Synth 8-3886] merging instance 'MEMi_11/U/DP/U_Rx_DATA/q_reg[18]' (FDCE) to 'MEMi_11/U/DP/U_Rx_DATA/q_reg[19]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U/DP/U_IE/q_reg[19] )
+INFO: [Synth 8-3886] merging instance 'MEMi_11/U/DP/U_Rx_DATA/q_reg[19]' (FDCE) to 'MEMi_11/U/DP/U_Rx_DATA/q_reg[20]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U/DP/U_IE/q_reg[20] )
+INFO: [Synth 8-3886] merging instance 'MEMi_11/U/DP/U_Rx_DATA/q_reg[20]' (FDCE) to 'MEMi_11/U/DP/U_Rx_DATA/q_reg[21]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U/DP/U_IE/q_reg[21] )
+INFO: [Synth 8-3886] merging instance 'MEMi_11/U/DP/U_Rx_DATA/q_reg[21]' (FDCE) to 'MEMi_11/U/DP/U_Rx_DATA/q_reg[22]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U/DP/U_IE/q_reg[22] )
+INFO: [Synth 8-3886] merging instance 'MEMi_11/U/DP/U_Rx_DATA/q_reg[22]' (FDCE) to 'MEMi_11/U/DP/U_Rx_DATA/q_reg[23]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U/DP/U_IE/q_reg[23] )
+INFO: [Synth 8-3886] merging instance 'MEMi_11/U/DP/U_Rx_DATA/q_reg[23]' (FDCE) to 'MEMi_11/U/DP/U_Rx_DATA/q_reg[24]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U/DP/U_IE/q_reg[24] )
+INFO: [Synth 8-3886] merging instance 'MEMi_11/U/DP/U_Rx_DATA/q_reg[24]' (FDCE) to 'MEMi_11/U/DP/U_Rx_DATA/q_reg[25]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U/DP/U_IE/q_reg[25] )
+INFO: [Synth 8-3886] merging instance 'MEMi_11/U/DP/U_Rx_DATA/q_reg[25]' (FDCE) to 'MEMi_11/U/DP/U_Rx_DATA/q_reg[26]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U/DP/U_IE/q_reg[26] )
+INFO: [Synth 8-3886] merging instance 'MEMi_11/U/DP/U_Rx_DATA/q_reg[26]' (FDCE) to 'MEMi_11/U/DP/U_Rx_DATA/q_reg[27]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U/DP/U_IE/q_reg[27] )
+INFO: [Synth 8-3886] merging instance 'MEMi_11/U/DP/U_Rx_DATA/q_reg[27]' (FDCE) to 'MEMi_11/U/DP/U_Rx_DATA/q_reg[28]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U/DP/U_IE/q_reg[28] )
+INFO: [Synth 8-3886] merging instance 'MEMi_11/U/DP/U_Rx_DATA/q_reg[28]' (FDCE) to 'MEMi_11/U/DP/U_Rx_DATA/q_reg[29]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U/DP/U_IE/q_reg[29] )
+INFO: [Synth 8-3886] merging instance 'MEMi_11/U/DP/U_Rx_DATA/q_reg[29]' (FDCE) to 'MEMi_11/U/DP/U_Rx_DATA/q_reg[30]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U/DP/U_IE/q_reg[30] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U/DP/U_Rx_DATA/q_reg[30] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U/DP/U_IE/q_reg[31] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\U/DP/Sr_Tx/DFF2/q_reg_LDC )
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:17:36 ; elapsed = 00:35:05 . Memory (MB): peak = 1676.215 ; gain = 1297.156
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+---------------+------------+----------+
+|      |RTL Partition  |Replication |Instances |
++------+---------------+------------+----------+
+|1     |Data_Mem__GB0  |           1|     35179|
+|2     |Data_Mem__GB1  |           1|     32798|
+|3     |Data_Mem__GB2  |           1|      4595|
+|4     |Data_Mem__GB3  |           1|      6395|
+|5     |Data_Mem__GB4  |           1|      8219|
+|6     |Data_Mem__GB5  |           1|     10311|
+|7     |Data_Mem__GB6  |           1|      6842|
+|8     |Data_Mem__GB7  |           1|       890|
+|9     |Data_Mem__GB8  |           1|      6350|
+|10    |Data_Mem__GB9  |           1|       911|
+|11    |Data_Mem__GB10 |           1|       726|
+|12    |Memory__GC0    |           1|      1557|
+|13    |Writeback      |           1|       105|
+|14    |DataPath__GC0  |           1|      5966|
+|15    |ControlPath    |           1|       229|
++------+---------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:17:38 ; elapsed = 00:35:08 . Memory (MB): peak = 1676.215 ; gain = 1297.156
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+---------------+------------+----------+
+|      |RTL Partition  |Replication |Instances |
++------+---------------+------------+----------+
+|1     |Data_Mem__GB0  |           1|     35171|
+|2     |Data_Mem__GB1  |           1|     32798|
+|3     |Data_Mem__GB2  |           1|      4595|
+|4     |Data_Mem__GB3  |           1|      6395|
+|5     |Data_Mem__GB4  |           1|      8219|
+|6     |Data_Mem__GB5  |           1|     10311|
+|7     |Data_Mem__GB6  |           1|      6842|
+|8     |Data_Mem__GB7  |           1|       890|
+|9     |Data_Mem__GB8  |           1|      6350|
+|10    |Data_Mem__GB9  |           1|       911|
+|11    |Data_Mem__GB10 |           1|       726|
+|12    |Memory__GC0    |           1|      1557|
+|13    |Writeback      |           1|       105|
+|14    |DataPath__GC0  |           1|      5966|
+|15    |ControlPath    |           1|       229|
++------+---------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:17:46 ; elapsed = 00:35:22 . Memory (MB): peak = 1676.215 ; gain = 1297.156
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+---------------+------------+----------+
+|      |RTL Partition  |Replication |Instances |
++------+---------------+------------+----------+
+|1     |Data_Mem__GB0  |           1|     16561|
+|2     |Data_Mem__GB1  |           1|     15284|
+|3     |Data_Mem__GB2  |           1|      3470|
+|4     |Data_Mem__GB3  |           1|      5379|
+|5     |Data_Mem__GB4  |           1|      7275|
+|6     |Data_Mem__GB5  |           1|      9254|
+|7     |Data_Mem__GB6  |           1|      5338|
+|8     |Data_Mem__GB7  |           1|       535|
+|9     |Data_Mem__GB8  |           1|      4856|
+|10    |Data_Mem__GB9  |           1|       527|
+|11    |Data_Mem__GB10 |           1|       552|
+|12    |Memory__GC0    |           1|       794|
+|13    |Writeback      |           1|        40|
+|14    |DataPath__GC0  |           1|      3178|
+|15    |ControlPath    |           1|        76|
++------+---------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:18:07 ; elapsed = 00:36:10 . Memory (MB): peak = 1676.215 ; gain = 1297.156
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:18:07 ; elapsed = 00:36:11 . Memory (MB): peak = 1676.215 ; gain = 1297.156
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:18:10 ; elapsed = 00:36:17 . Memory (MB): peak = 1676.215 ; gain = 1297.156
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:18:10 ; elapsed = 00:36:17 . Memory (MB): peak = 1676.215 ; gain = 1297.156
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:18:17 ; elapsed = 00:36:34 . Memory (MB): peak = 1676.215 ; gain = 1297.156
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:18:17 ; elapsed = 00:36:34 . Memory (MB): peak = 1676.215 ; gain = 1297.156
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     2|
+|2     |CARRY4 |    80|
+|3     |LUT1   |     2|
+|4     |LUT2   |   885|
+|5     |LUT3   | 11586|
+|6     |LUT4   |  1595|
+|7     |LUT5   |  3023|
+|8     |LUT6   | 24548|
+|9     |MUXF7  |  9055|
+|10    |MUXF8  |  4424|
+|11    |FDCE   |  1530|
+|12    |FDPE   |    25|
+|13    |FDRE   | 16384|
+|14    |LDC    |    13|
+|15    |IBUF   |     3|
+|16    |OBUF   |     1|
++------+-------+------+
+
+Report Instance Areas: 
++------+-------------------------------+--------------------------+------+
+|      |Instance                       |Module                    |Cells |
++------+-------------------------------+--------------------------+------+
+|1     |top                            |                          | 73156|
+|2     |  c1                           |ControlPath               |     8|
+|3     |  dp1                          |DataPath                  | 73142|
+|4     |    DEC_EXE                    |Decode_Execute            |  2670|
+|5     |      DEC                      |Decode                    |  2547|
+|6     |        R1                     |Reg_file                  |  2514|
+|7     |        im                     |ImmGen                    |    33|
+|8     |      EXE                      |Execute                   |   123|
+|9     |        A1                     |ALU                       |    74|
+|10    |        b1                     |BranchCond                |    12|
+|11    |    FETCH                      |Fetch                     |   208|
+|12    |      C1                       |Counter_28                |     8|
+|13    |      PC1                      |FF_32bit_29               |   200|
+|14    |    MEM_WB                     |Memory_Writeback          | 70024|
+|15    |      MEM                      |Memory                    | 70016|
+|16    |        CSR_Reg                |CSR_Reg_file              |   403|
+|17    |          CSR_MEPC_FF          |FF_32bit_24               |   236|
+|18    |          CSR_MIE_FF           |FF_32bit_25               |    64|
+|19    |          CSR_MSTAT_FF         |FF_32bit_26               |    23|
+|20    |          CSR_MTVEC_FF         |FF_32bit_27               |    80|
+|21    |        M2                     |Data_Mem                  | 69073|
+|22    |        U                      |UART                      |   540|
+|23    |          Ct                   |UART_Controller           |    84|
+|24    |            D1                 |DownCounter_1bit          |     2|
+|25    |            FSM                |StateMachine              |    46|
+|26    |            Rd                 |Reloadable_DownCounter    |    17|
+|27    |            Rd2                |Reloadable_DownCounter_23 |    19|
+|28    |          DP                   |UART_Datapath             |   456|
+|29    |            DC1                |DownClocking_BaudRate     |    40|
+|30    |            DC2                |DownClocking_BaudRate_0   |    80|
+|31    |            Sr_Rx              |ShiftReg_10bit_Rx         |    17|
+|32    |              DFF1             |D_FlipFlop_14             |     2|
+|33    |              \genblk1[1].DFF  |D_FlipFlop_15             |     2|
+|34    |              \genblk1[2].DFF  |D_FlipFlop_16             |     2|
+|35    |              \genblk1[3].DFF  |D_FlipFlop_17             |     2|
+|36    |              \genblk1[4].DFF  |D_FlipFlop_18             |     2|
+|37    |              \genblk1[5].DFF  |D_FlipFlop_19             |     2|
+|38    |              \genblk1[6].DFF  |D_FlipFlop_20             |     2|
+|39    |              \genblk1[7].DFF  |D_FlipFlop_21             |     2|
+|40    |              \genblk1[8].DFF  |D_FlipFlop_22             |     1|
+|41    |            Sr_Tx              |ShiftReg_10bit_Tx         |    37|
+|42    |              DFF1             |D_FlipFlop                |     4|
+|43    |              DFF2             |D_FlipFlop_5              |     1|
+|44    |              \genblk1[1].DFF  |D_FlipFlop_6              |     4|
+|45    |              \genblk1[2].DFF  |D_FlipFlop_7              |     4|
+|46    |              \genblk1[3].DFF  |D_FlipFlop_8              |     4|
+|47    |              \genblk1[4].DFF  |D_FlipFlop_9              |     4|
+|48    |              \genblk1[5].DFF  |D_FlipFlop_10             |     4|
+|49    |              \genblk1[6].DFF  |D_FlipFlop_11             |     4|
+|50    |              \genblk1[7].DFF  |D_FlipFlop_12             |     4|
+|51    |              \genblk1[8].DFF  |D_FlipFlop_13             |     4|
+|52    |            U_BAUD             |FF_32bit                  |   114|
+|53    |            U_BAUD_BUFFER      |FF_32bit_1                |    65|
+|54    |            U_CTR              |FF_32bit_2                |    75|
+|55    |            U_Rx_DATA          |FF_32bit_3                |    17|
+|56    |            U_Tx_DATA          |FF_32bit_4                |    10|
+|57    |      WB                       |Writeback                 |     8|
+|58    |        C2                     |Counter                   |     8|
++------+-------------------------------+--------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:18:17 ; elapsed = 00:36:34 . Memory (MB): peak = 1676.215 ; gain = 1297.156
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 203 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:18:17 ; elapsed = 00:36:39 . Memory (MB): peak = 1676.215 ; gain = 1297.156
+Synthesis Optimization Complete : Time (s): cpu = 00:18:17 ; elapsed = 00:36:39 . Memory (MB): peak = 1676.215 ; gain = 1297.156
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 13572 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+WARNING: [Netlist 29-101] Netlist 'Pipelined_Processor' is not ideal for floorplanning, since the cellview 'Data_Mem' contains a large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 1 inverter(s) to 1 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.026 . Memory (MB): peak = 1676.215 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 13 instances were transformed.
+  LDC => LDCE: 12 instances
+  LDC => LDCE (inverted pins: G): 1 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+270 Infos, 114 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:18:45 ; elapsed = 00:37:39 . Memory (MB): peak = 1676.215 ; gain = 1322.027
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.023 . Memory (MB): peak = 1676.215 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'C:/DriveA/Workspaces/Vivado/CA_Lab/CEP/CA_CEP.runs/synth_1/Pipelined_Processor.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:06 ; elapsed = 00:00:12 . Memory (MB): peak = 1676.215 ; gain = 0.000
+INFO: [runtcl-4] Executing : report_utilization -file Pipelined_Processor_utilization_synth.rpt -pb Pipelined_Processor_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Wed May  8 01:31:06 2024...

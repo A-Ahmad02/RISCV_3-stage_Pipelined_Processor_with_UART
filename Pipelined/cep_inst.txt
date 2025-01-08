@@ -1,0 +1,41 @@
+	j 	main
+	j 	interrupt_handler
+
+interrupt_handler:
+	csrrw 	x0,	mie,	x0	// Clear interrupt enable
+	lw 	x8, 	12(x1)		// Load from UART_Rx_DATA reg
+	sw 	x8,	4(x0)		// Store the data received in memory
+	csrrw 	x0,	mie,	x11	// Re-Set interrupt enable to previous value
+	mret				// Return from interrupt
+
+main:
+// Configure CSR registers
+	lui	x11,	16		// Store bit16=1 in x11
+	li 	x12,	8		// Store bit3=1 in x12
+	li 	x13,	8		// Store pc address of jumping to interrupt_handler
+	csrrw 	x0,	mie,	x11	// Enable UART interrupt
+	csrrw 	x0,	mstatus,x12	// Enable Global interrupt
+	csrrw 	x0,	mtvec,	x13	// Set Mode='b00 and BASE[BUS_WIDTH-1:2]='b10
+
+// Configure UART
+	lui 	x1, 	524288		// For UART addresses
+	addi 	x3, 	x0, 	130 	// Data to transmit
+	addi 	x4, 	x0, 	1040   	// Baud divisor-> Baud rate = sys_clk/(DIV+1) = (10^8)/(1040+1) = 96061 Hz
+	addi 	x6, 	x0, 	1	// Used to Set ctr_bit0 (and cleared with x0)
+	addi 	x7, 	x0, 	2	// Choose what UART Local interrupt to enable (Receiver interrupt enabled)
+	sw	x7,	20(x1)		// Enable UART Local interrupt
+	sw 	x4, 	4(x1)		// Set UART_Baud (DIVISOR)
+
+// Transmit Data using Uart
+label1:
+	lw 	x2, 	0(x1)		// Load from UART_Tx_DATA reg
+	bne 	x0, 	x2, 	label1	// Check full bit of UART_Tx_DATA reg is empty
+	sw 	x3,	0(x1)		// Store Data to transmit
+
+	sw 	x6, 	8(x1)		// Set ctr_bit0=1 and ctr_bit1=0, to start transmission and have one stop bit
+	sw 	x0, 	8(x1)		// Clear ctr_bit0=0
+
+
+loop:					// Forever loop
+	addi 	x14,	x14,	1
+	j 	loop
