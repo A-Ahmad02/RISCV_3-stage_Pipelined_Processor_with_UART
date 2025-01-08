@@ -1,0 +1,49 @@
+# compile verilog/system verilog design source files
+sv xil_defaultlib  --include "../../../../" --include "../../../../UART" \
+"../../../../ALU.sv" \
+"../../../../BranchCond.sv" \
+"../../../../CSR_Reg_file.sv" \
+"../../../../UART/Comparator_3bit.sv" \
+"../../../../UART/Comparator_4bit.sv" \
+"../../../../ControlPath.sv" \
+"../../../../Counter.sv" \
+"../../../../UART/D_FlipFlop.sv" \
+"../../../../DataPath.sv" \
+"../../../../Data_Mem.sv" \
+"../../../../Decode.sv" \
+"../../../../Decode_Execute.sv" \
+"../../../../UART/DownClocking_BaudRate.sv" \
+"../../../../UART/DownCounter_1bit.sv" \
+"../../../../UART/Edge_to_Pulse.sv" \
+"../../../../Execute.sv" \
+"../../../../FF_1bit.sv" \
+"../../../../FF_32bit.sv" \
+"../../../../Fetch.sv" \
+"../../../../Full_Forwarding_Unit.sv" \
+"../../../../ImmGen.sv" \
+"../../../../Instr_Mem.sv" \
+"../../../../Load_Store_Unit.sv" \
+"../../../../MUX2x1.sv" \
+"../../../../UART/MUX2x1_1bit.sv" \
+"../../../../UART/MUX2x1_4bit.sv" \
+"../../../../MUX3x1.sv" \
+"../../../../MUX4x1.sv" \
+"../../../../Memory.sv" \
+"../../../../Memory_Writeback.sv" \
+"../../../../Pipelined_Processor.sv" \
+"../../../../Reg_file.sv" \
+"../../../../UART/Reloadable_DownCounter.sv" \
+"../../../../UART/ShiftReg_10bit_Rx.sv" \
+"../../../../UART/ShiftReg_10bit_Tx.sv" \
+"../../../../UART/StateMachine.sv" \
+"../../../../UART/UART.sv" \
+"../../../../UART/UART_Controller.sv" \
+"../../../../UART/UART_Datapath.sv" \
+"../../../../Writeback.sv" \
+"../../../../Pipelined_Processor_tb.sv" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

@@ -1,0 +1,83 @@
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/DriveA/Workspaces/Vivado/CA_Lab/CEP/ALU.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/DriveA/Workspaces/Vivado/CA_Lab/CEP/BranchCond.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module BranchCond
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/DriveA/Workspaces/Vivado/CA_Lab/CEP/CSR_Reg_file.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CSR_Reg_file
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/DriveA/Workspaces/Vivado/CA_Lab/CEP/UART/Comparator_3bit.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Comparator_3bit
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/DriveA/Workspaces/Vivado/CA_Lab/CEP/UART/Comparator_4bit.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Comparator_4bit
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/DriveA/Workspaces/Vivado/CA_Lab/CEP/ControlPath.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ControlPath
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/DriveA/Workspaces/Vivado/CA_Lab/CEP/Counter.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Counter
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/DriveA/Workspaces/Vivado/CA_Lab/CEP/UART/D_FlipFlop.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module D_FlipFlop
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/DriveA/Workspaces/Vivado/CA_Lab/CEP/DataPath.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DataPath
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/DriveA/Workspaces/Vivado/CA_Lab/CEP/Data_Mem.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Data_Mem
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/DriveA/Workspaces/Vivado/CA_Lab/CEP/Decode.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Decode
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/DriveA/Workspaces/Vivado/CA_Lab/CEP/Decode_Execute.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Decode_Execute
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/DriveA/Workspaces/Vivado/CA_Lab/CEP/UART/DownClocking_BaudRate.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DownClocking_BaudRate
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/DriveA/Workspaces/Vivado/CA_Lab/CEP/UART/DownCounter_1bit.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DownCounter_1bit
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/DriveA/Workspaces/Vivado/CA_Lab/CEP/UART/Edge_to_Pulse.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Edge_to_Pulse
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/DriveA/Workspaces/Vivado/CA_Lab/CEP/Execute.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Execute
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/DriveA/Workspaces/Vivado/CA_Lab/CEP/FF_1bit.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FF_1bit
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/DriveA/Workspaces/Vivado/CA_Lab/CEP/FF_32bit.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FF_32bit
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/DriveA/Workspaces/Vivado/CA_Lab/CEP/Fetch.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Fetch
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/DriveA/Workspaces/Vivado/CA_Lab/CEP/Full_Forwarding_Unit.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Full_Forwarding_Unit
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/DriveA/Workspaces/Vivado/CA_Lab/CEP/ImmGen.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ImmGen
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/DriveA/Workspaces/Vivado/CA_Lab/CEP/Instr_Mem.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Instr_Mem
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/DriveA/Workspaces/Vivado/CA_Lab/CEP/Load_Store_Unit.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Load_Store_Unit
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/DriveA/Workspaces/Vivado/CA_Lab/CEP/MUX2x1.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MUX2x1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/DriveA/Workspaces/Vivado/CA_Lab/CEP/UART/MUX2x1_1bit.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MUX2x1_1bit
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/DriveA/Workspaces/Vivado/CA_Lab/CEP/UART/MUX2x1_4bit.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MUX2x1_4bit
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/DriveA/Workspaces/Vivado/CA_Lab/CEP/MUX3x1.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MUX3x1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/DriveA/Workspaces/Vivado/CA_Lab/CEP/MUX4x1.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MUX4x1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/DriveA/Workspaces/Vivado/CA_Lab/CEP/Memory.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Memory
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/DriveA/Workspaces/Vivado/CA_Lab/CEP/Memory_Writeback.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Memory_Writeback
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/DriveA/Workspaces/Vivado/CA_Lab/CEP/Pipelined_Processor.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Pipelined_Processor
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/DriveA/Workspaces/Vivado/CA_Lab/CEP/Reg_file.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Reg_file
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/DriveA/Workspaces/Vivado/CA_Lab/CEP/UART/Reloadable_DownCounter.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Reloadable_DownCounter
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/DriveA/Workspaces/Vivado/CA_Lab/CEP/UART/ShiftReg_10bit_Rx.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ShiftReg_10bit_Rx
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/DriveA/Workspaces/Vivado/CA_Lab/CEP/UART/ShiftReg_10bit_Tx.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ShiftReg_10bit_Tx
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/DriveA/Workspaces/Vivado/CA_Lab/CEP/UART/StateMachine.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module StateMachine
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/DriveA/Workspaces/Vivado/CA_Lab/CEP/UART/UART.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module UART
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/DriveA/Workspaces/Vivado/CA_Lab/CEP/UART/UART_Controller.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module UART_Controller
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/DriveA/Workspaces/Vivado/CA_Lab/CEP/UART/UART_Datapath.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module UART_Datapath
+INFO: [VRFC 10-311] analyzing module uart_interrupt
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/DriveA/Workspaces/Vivado/CA_Lab/CEP/Writeback.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Writeback
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/DriveA/Workspaces/Vivado/CA_Lab/CEP/Pipelined_Processor_tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Processor_tb
